@@ -73,7 +73,8 @@
                                     <span class="badge-small badge-primary font-weight-bold rounded px-1"">Primary</span>
                                     <h5 class="card-title">This is a wider card with supporting text below as a natural lead-in</h5>
                                     <p class="card-text"></p>
-                                </div></a>
+                                </div>
+                            </a>
                             <div class="card-footer">
                                 <small class="text-muted">Last updated 3 mins ago</small>
                             </div>
@@ -365,12 +366,12 @@
                             </div>
                         </div>
 
-                        <div style="bottom: 0;">
-                            <a class="carousel-control-prev" href="#dossierCarousel" role="button" data-slide="prev" style="background-color: rgb(0, 0, 0, 0.5); width: 40px; height: 40px;">
+                        <div style="">
+                            <a class="carousel-control-prev" href="#dossierCarousel" role="button" data-slide="prev" style="background-color: rgb(0, 0, 0,0.5); width: 40px; height: 40px;">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="carousel-control-next" href="#dossierCarousel" role="button" data-slide="next" style="background-color: rgb(0, 0, 0, 0.5); width: 40px; height: 40px;">
+                            <a class="carousel-control-next" href="#dossierCarousel" role="button" data-slide="next" style="background-color: rgb(0,0,0,0.5); width: 40px; height: 40px;">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
