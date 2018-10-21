@@ -5,7 +5,7 @@
             <span class="fa fa-bars" style="color: #111;" onclick="openNavLeft()"></span>
         </div>
         <div class="title-mo">
-            <a href="index.php">
+            <a href="{{route('root_path')}}">
                 <h5 class="text-dark"><strong>LA ROYALE<span class="pt-0 px-2 pb-1 rounded title-label">News</span></strong></h5>
             </a>
         </div>
@@ -54,7 +54,7 @@
     <div class="d-none d-md-block">
       <nav class="navbar navbar-light navbar-expand-sm">
         <div class="">
-            <a class="navbar-brand py-2" href="">
+            <a class="navbar-brand py-2" href="{{route('root_path')}}">
                 <h2 class="m-0"><strong>LA ROYALE<span class="pt-0 px-2 pb-1 rounded title-label">News</span></strong></h2>
                 <small><em>L'information à l'ère du numérique</em></small>
             </a>
