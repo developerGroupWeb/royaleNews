@@ -1,8 +1,70 @@
+.overlay { 
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: ;
+    color: #818181;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover{
+	color: #000;
+}
+
+.menuFullScreen-content img{
+    height: 260px;
+    max-height: 260px;
+}
+
+.menuFullScreen-content .card-img-overlay{
+	background-color: rgba(0,0,0, 0.7);
+	font-weight: bold;
+}
+
+.menuFullScreen-content .card-img-overlay h5{
+	font-size: 25px;
+}
+
+.searchBar-content{
+	display: none;
+}
+
+
 #main{
 	background-color: #eee;
 }
 
-.title-label,.bg-rnews{
+.title-label,.bg-rnews, .singbg-btn{
 	color: #000;
 	background: #00c6ff;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #00c6ff, #0072ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -108,9 +170,10 @@ nav .sidenavLeft .abo-li a{
 }
 
 .carousel-caption-bg{
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgb(0, 0, 0, 0.6);
 		bottom: 0;
 	}
+
 
 @media (max-width: 575.98px) {
 	
@@ -150,6 +213,18 @@ nav .sidenavLeft .abo-li a{
 		font-size: 25px;
 		cursor: pointer;
 	}
+
+	.politic_content{
+		margin-top: 50px;
+	}
+
+	.politic_content h1{
+		font-size: 25px;
+	}
+
+	.politic_content .card .nav-pills{
+		font-size: 10px;
+	}
 }
 
 
@@ -187,5 +262,3 @@ nav .sidenavLeft .abo-li a{
 		font-size: 11px;
 	}
 }
-
-
