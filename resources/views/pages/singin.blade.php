@@ -1,6 +1,6 @@
 @extends('templates.template')
 
-
+@section('content')
 <div class="">
 	<nav class="navbar navbar-expand-sm fixed-top px-5 shadow" style="background: #000000;">>
 		<a class="navbar-brand" href="{{route('root_path')}}" style="color: #fff;">
@@ -111,3 +111,4 @@
 		</div>
 	</footer>
 </div>
+@stop
