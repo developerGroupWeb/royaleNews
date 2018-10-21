@@ -134,7 +134,7 @@
       <div id="myNav" class="overlay">
         <nav class="navbar navbar-light navbar-expand-sm bg-white">
           <div class="">
-            <a class="navbar-brand py-2" href="index.php">
+            <a class="navbar-brand py-2" href="">
               <h2 class="m-0"><strong>LA ROYALE<span class="pt-0 px-2 pb-1 rounded title-label">News</span></strong></h2>
               <small><em>L'information à l'ère du numérique</em></small>
             </a>
