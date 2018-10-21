@@ -20,7 +20,7 @@
                                 @foreach($unes as $une)
                                 <a href="{{route('rubric.show', [strtolower($une->rubric), $formatData($une->start_at), $une->id, $une->slug])}}">
                                     <span class="badge badge-primary">{{$une->rubric}}</span>
-                                    <img class="d-block w-100 img-fluid" src="http://127.0.0.1/urielAdmin/public/storage/pictures/{{$une->pictures}}" alt="First slide">
+                                    <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$une->pictures}}" alt="First slide">
                                     <div class="carousel-caption carousel-caption-bg">
                                         <h2 class="title">{{$une->title}}</h2>
                                     </div>
@@ -31,7 +31,7 @@
                                 @foreach($suites as $suite)
                                 <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->start_at), $suite->id, $suite->slug])}}">
                                     <span class="badge badge-primary">{{$suite->rubric}}</span>
-                                    <img class="d-block w-100 img-fluid" src="http://127.0.0.1/urielAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                    <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
                                     <div class="carousel-caption carousel-caption-bg">
                                         <h2 class="title">{{$suite->title}}</h2>
                                     </div></a>

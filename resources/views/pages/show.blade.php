@@ -10,7 +10,7 @@
                     @foreach($article as $detail)
 
                             <h4>{{$detail->title}}</h4>
-                            <img src="http://127.0.0.1/urielAdmin/public/storage/pictures/{{$detail->pictures}}" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
+                            <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
                             <p><strong>{{$detail->content}}</strong></p>
                         <br><br>
                         <p>{{$detail->contents}}</p>
