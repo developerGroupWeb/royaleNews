@@ -130,7 +130,7 @@
     </div>
 
     <!--Menu fullscreen content-->
-    <div class="d-none d-md-block">
+    <div class="d-none">
       <div id="myNav" class="overlay">
         <nav class="navbar navbar-light navbar-expand-sm bg-white">
           <div class="">
@@ -213,76 +213,3 @@
         </div>
       </div>
     </div>
-<!--end side navbar mobile-->
-
-
-<!--header navbar on desktop-->
-<div class="d-none d-md-block">
-    <nav class="navbar navbar-light navbar-expand-sm">
-        <div class="">
-            <a class="navbar-brand py-2" href="{{route('root_path')}}">
-                <h2 class="m-0"><strong>LA ROYALE<span class="pt-0 px-2 pb-1 rounded title-label">News</span></strong></h2>
-                <small><em>L'information à l'ère du numérique</em></small>
-            </a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link rounded font-weight-bold bg-warning text-white" href="#">ABONNEZ-VOUS/1 mois gratuit</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold text-dark" href="Sing_in.php"><span class="fa fa-user-circle-o"></span> Connexion</a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</div>
-
-<div class="d-none d-md-block sticky-top">
-    <nav class="navbar navbar-dark navbar-expand-sm" style="background: #000000;">
-        <div class="pl-3 pt-1 pb-1 rounded m-auto" style="cursor: pointer; background: #393434;">
-            <span class="fa fa-bars mr-3" style="font-size: 23px; color: #eee;"><small style="font-family: 'Arial';"> MENU</small></span>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'politiques'])}}"><strong>Politique</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'economies'])}}"><strong>Economie</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'opinions'])}}"><strong>Opinion</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'enquetes'])}}"><strong>Enquêtes</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'sports'])}}"><strong>Sport</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'santes'])}}"><strong>Santé</strong></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'internationals'])}}"><strong>International</strong></a>
-                </li>
-            </ul>
-            <div class="navbar-nav ml-auto">
-                <div class="nav-item" style="color: #eee; cursor: pointer;">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-
-<div class="d-none d-md-block">
-    <div class="navbar bg-danger" style=" background: ;">
-        <p style="height: 10px; color: #fff;"><strong class="mr-2">EN CE MOMENT</strong><span style="border-right: 2px solid #fff;"></span></p>
-    </div>
-</div>
-
-<!--end header navbar on desktop-->
