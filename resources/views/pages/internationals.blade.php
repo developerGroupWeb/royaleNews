@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-sm-12">
                 @foreach($une as $detail)
-                    <a href="{{route('rubric.show', [$formatData($detail->start_at), strtolower($detail->rubric), $detail->id, $detail->slug])}}">
+                    <a href="{{route('rubric.show', [$formatData($detail->start_at), strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                         <h4>{{$detail->title}}</h4>
                         <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
                         <p>{{$detail->content}}</p>
