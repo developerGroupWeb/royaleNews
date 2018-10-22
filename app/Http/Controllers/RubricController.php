@@ -15,9 +15,16 @@ class RubricController extends Controller
      */
     public function all($rubrics)
     {
-        $une     = articleService::dataUne($rubrics);
-        $article = articleService::dataArticle($rubrics);
-        return view('pages.'.$rubrics, ['article' => $article, 'une' => $une]);
+        $une       = articleService::dataUne($rubrics);
+        $firstTwo  = articleService::dataTheFirstTwo($rubrics);
+        $firstTree = articleService::dataTheFirstTree($rubrics);
+        $article   = articleService::dataArticle($rubrics);
+        return view('pages.'.$rubrics, [
+            'article'  => $article,
+            'une'      => $une,
+            'firstTwo' => $firstTwo,
+            'firstTree' => $firstTree,
+        ]);
     }
 
 

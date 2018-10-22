@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="card-deck">
-          @foreach($une as $detail)
+          @foreach($firstTwo as $detail)
             <div class="card mb-3 bg-white">
               <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                 <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" style="width:100%" alt="Image">
@@ -45,95 +45,26 @@
               </div>
             </div>
           @endforeach
-          <div class="card mb-3">
-            <a href="#">
-              <img class="img-fluid w-100 h-100" src="../public/images/880x495_551979.jpg" alt="First slide">
-            </a>
-            <h4 class="card-body"><a href="">Outside counsel in Kavanaugh hearing told Republican senators she would not have been able to prosecute she would not have been able to prosecute</a></h4>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
         </div>
       </div>
 
       <div class="row">
         <div class="card-deck">
-          <div class="card mb-3 bg-white">
-            <a href="#">
-              <img class="img-fluid w-100" src="../public/images/gvbuyb.jpg" alt="First slide">
-            </a>
-            <h4 class="card-body"><a href="">Outside counsel in Kavanaugh hearing </a></h4>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+          @foreach($firstTree as $detail)
+            <div class="card mb-3 bg-white">
+              <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" style="width:100%" alt="Image">
+              </a>
+              <h4 class="card-body"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h4>
+              <div class="card-footer">
+                <small class="text-muted">{{$times_already($detail->start_at)}}</small>
+              </div>
             </div>
-          </div>
-          <div class="card mb-3">
-            <a href="#">
-              <img class="img-fluid w-100" src="../public/images/gvbuyb.jpg" alt="First slide">
-            </a>
-            <h4 class="card-body"><a href="">Outside counsel in Kavanaugh hearing told Republican senatsecute</a></h4>
-          </div>
-          <div class="card mb-3">
-            <a href="#">
-              <img class="img-fluid w-100" src="../public/images/gvbuyb.jpg" alt="First slide">
-            </a>
-            <h4 class="card-body"><a href="">Outside counsel in Kavanaugh hearing told Republican </a></h4>
-          </div>
+          @endforeach
         </div>
       </div>
 
-      <div class="row">
-        <div class="card-columns">
-          <div class="card bg-white">
-            <div class="card-body">
-              <h5 class="card-title"><a href="">Card title that wraps to a new line</a></h5>
-              <small class="text-muted">Politique</small>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="">Card title that wraps to a new line</a></h5>
-              <small class="text-muted">Politique</small>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="">Card title that wraps to a new line</a></h5>
-              <small class="text-muted">Politique</small>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="">Card title that wraps to a new line</a></h5>
-              <small class="text-muted">Politique</small>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="">Card title that wraps to a new line</a></h5>
-              <small class="text-muted">Politique</small>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title"><a href="">Card title that wraps to a new line</a></h5>
-              <small class="text-muted">Politique</small>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
+
       </div>
 
       <hr>
