@@ -59,7 +59,7 @@ class Articlehelper
                         $times_type .= 's';
                     }
 
-                    return $times_already. ' ' .$times_type;
+                    return $times_already. ' ' .$times_type.' déjà';
 
                 }
             }
