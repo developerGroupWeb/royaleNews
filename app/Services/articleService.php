@@ -13,10 +13,17 @@ class articleService
 {
     static function dataArticle($rubrics)
     {
-        return $article = Article::where('rubric', $rubrics)->get();
+        return $article = Article::where('rubric', $rubrics)
+                                 ->get();
     }
     static function dataUne($rubrics)
     {
-        return $une = Article::where('rubric', $rubrics)->orderBy('start_at')->skip(0)->take(1)->get();
+        return $une = Article::where('rubric', $rubrics)
+                             ->where('position', 0)
+                             ->orderBy('start_at')
+                             ->skip(0)
+                             ->take(1)
+                             ->get();
+        //dd($une);
     }
 }

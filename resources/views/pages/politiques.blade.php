@@ -18,7 +18,7 @@
       <hr>
       <div class="row">
       <div class="col-12">
-          @foreach($article as $detail)
+          @foreach($une as $detail)
               <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                   <h4>{{$detail->title}}</h4>
                   <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" style="width:100%" alt="Image">
@@ -34,15 +34,17 @@
           </div>
         </div>
         <div class="card-deck">
-          <div class="card mb-3 bg-white">
-            <a href="#">
-              <img class="img-fluid w-100 h-100" src="../public/images/880x495_551979.jpg" alt="First slide">
-            </a>
-            <h4 class="card-body"><a href="">Outside counsel in Kavanaugh hearing told Republican senators she would not have been able to prosecute</a></h4>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+          @foreach($une as $detail)
+            <div class="card mb-3 bg-white">
+              <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" style="width:100%" alt="Image">
+              </a>
+              <h4 class="card-body"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h4>
+              <div class="card-footer">
+                <small class="text-muted">{{$times_already($detail->start_at)}}</small>
+              </div>
             </div>
-          </div>
+          @endforeach
           <div class="card mb-3">
             <a href="#">
               <img class="img-fluid w-100 h-100" src="../public/images/880x495_551979.jpg" alt="First slide">
