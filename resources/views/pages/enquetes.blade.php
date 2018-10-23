@@ -151,9 +151,8 @@
                 </div>
             </div>
 
-        <!--<?php
-        /*le aside.php doit rester ici*/
-        ?>-->
+            @include('templates.aside')
 
         </div>
+    </div>
 @stop
