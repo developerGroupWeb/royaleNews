@@ -1,6 +1,3 @@
-@extends('templates.template')
-
-
 <div class="col-lg-4">
       <div class="card w-100 mb-4">
         <h5 class="p-2 card-header">Suivez-nous sur</h5>
@@ -68,4 +65,4 @@
           </div>
         </div>
       </div>
-    </div>
+</div>
