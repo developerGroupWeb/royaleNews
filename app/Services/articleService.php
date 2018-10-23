@@ -32,7 +32,7 @@ class articleService
                                   ->where('position', '!=', 0)
                                   ->orderBy('start_at')
                                   ->skip(2)
-                                  ->take(3)
+                                  ->take(12)
                                   ->get();
         //dd($firstTree);
     }
