@@ -59,44 +59,46 @@
             </div>
 
             <div class="col-12">
+
             <form method="post" action="" id="singup">
+                {{csrf_field()}}
               <div class="radio">
                     <span style="font-weight: bold; margin-right: 20px;">Civilité: </span>
                     <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Madame
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option1"> Madame
                     </label>
                     <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Monsieur
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option2"> Monsieur
                     </label>
-                  </div>
+              </div>
 
                   <div class="row">
                     <div class="form-group col-sm-6">
                       <label for="firstname">Prénom</label>
-                      <input type="text" class="form-control" id="firstname" placeholder="Votre prénom">
+                      <input type="text" class="form-control" id="firstname" title="first name" placeholder="Votre prénom"><span class="error"></span>
                     </div>
 
                     <div class="form-group col-sm-6">
                       <label for="surname">Nom</label>
-                      <input type="text" class="form-control" id="surname" placeholder="Votre nom">
+                      <input type="text" class="form-control" id="surname" title="surname" placeholder="Votre nom"><span class="error"></span>
                     </div>
                   </div>
               <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" class="form-control " id="email" placeholder="email@mail.fr">
+                <input type="email" class="form-control " id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
               </div>
 
               <div class="form-group">
                 <div class="">
                   <label class="pull-left" for="password">Créer un mot de passe</label>
-                  <span class="pull-right" style="font-size: 15px; color: #1abc9c;"><i class="fa fa-eye" aria-hidden="true">Afficher</i><i class="fa fa-eye-slash" aria-hidden="true" style="display: none;">Cacher</i></span>
+                  <span class="pull-right" style="font-size: 15px; color: #1abc9c;"><i class="fa fa-eye" id="fa-eye" aria-hidden="true">Afficher</i><i class="fa fa-eye-slash" id="fa-eye-slash" aria-hidden="true" style="display: none;">Cacher</i></span>
               </div>
-                <input type="password" class="form-control" id="password" placeholder="Au moins 8 caratères, 1 majuscule, 1 chiffre">
+                <input type="password" class="form-control" id="password" title="password" placeholder="Au moins 8 caratères, 1 majuscule, 1 chiffre"><span class="error"></span>
               </div>
 
               <div class="form-group">
                           <label class="pull-left" for="password">Confirmer mot de passe</label>
-                          <input type="password" class="form-control" id="password" placeholder="Confirmer mot de passe">
+                          <input type="password" class="form-control" id="passwordConfirm" title="password confirm" placeholder="Confirmer mot de passe"><span class="error"></span>
                   </div>
 
                   <div class="checkbox">
@@ -116,7 +118,7 @@
                   </div>
 
 
-              <button type="submit" name="singup" id="singup" class="btn col-sm-8 offset-sm-2 col-8 offset-2 singbg-btn" style="padding: 12px; margin-bottom: 40px;"><h4>Je m'inscris</h4></button>
+              <button type="submit"  id="singup" class="btn col-sm-8 offset-sm-2 col-8 offset-2 singbg-btn" style="padding: 12px; margin-bottom: 40px;"><h4>Je m'inscris</h4></button>
             </form>
         </div>
       </div>
