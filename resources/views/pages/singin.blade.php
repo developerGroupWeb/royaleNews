@@ -59,7 +59,7 @@
 					<form method="post" action="" id="singin">
 					  <div class="form-group row">
 					    <label for="email">E-mail</label>
-					    <input type="email" class="form-control" id="email" placeholder="email@mail.fr">
+					    <input type="email" class="form-control" id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
 					  </div>
 
 					  <div class="form-group row">
@@ -67,12 +67,12 @@
 					  		<div class="row">
 						    	<label class="" for="password">Mot de passe</label>
 						    	<span class="ml-auto" style="font-size: 15px; color: #1abc9c;">
-						    		<i class="fa fa-eye" aria-hidden="true">Afficher</i>
-						    		<i class="fa fa-eye-slash" aria-hidden="true" style="display: none;">Cacher</i>
+						    		<i class="fa fa-eye" id="fa-eye" aria-hidden="true">Afficher</i>
+						    		<i class="fa fa-eye-slash" id="fa-eye-slash" aria-hidden="true" style="display: none;">Cacher</i>
 						    	</span>
 						    </div>
 						</div>
-					    <input type="password" class="form-control" id="password" placeholder="Votre mot de passe">
+					    <input type="password" class="form-control" id="password" title="password" placeholder="Votre mot de passe"><span class="error"></span>
 					  </div>
 
 					  <div class="">
@@ -85,7 +85,7 @@
 					  </div>
 					  
 					  <div class="singin" style="margin-top: 25px;">
-					  	<button type="submit" name="" id="singin" class="btn col-sm-8 offset-sm-2 col-8 offset-2 mt-5 singbg-btn" style="padding: 12px;"><h4>Se connecter</h4></button>
+					  	<button type="submit"  id="singin" class="btn col-sm-8 offset-sm-2 col-8 offset-2 mt-5 singbg-btn" style="padding: 12px;"><h4>Se connecter</h4></button>
 					  </div>
 					</form>
 				</div>
