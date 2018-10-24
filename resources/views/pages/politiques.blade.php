@@ -2,7 +2,7 @@
 
 @section('content')
     @include('templates.nav')
-      <div class="politic_content">
+      <div class="rubric-content">
         <div class="container-fluid">
           <div class="row">
             <div class="">

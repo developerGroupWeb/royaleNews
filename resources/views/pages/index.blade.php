@@ -52,12 +52,13 @@
                 </div>
 
                 <div class="d-block d-md-none row">
-
                     <div class="card">
                         <a href="#">
-                            <img class="card-img-top" style="border-bottom: 3px solid #333;" src="{{asset('images/gvbuyb.jpg')}}" alt="Card image cap">
+                            <img class="card-img-top" src="{{asset('images/gvbuyb.jpg')}}" alt="Card image cap">
                             <span class="badge badge-primary">Politique</span>
-                            <h5 class="p-3">This is a wider card with supporting text below as a natural lead-in</h5>
+                            <div class="w-100" style="position: absolute; bottom: 50px; background: rgb(0,0,0,0.6);">
+                                <h5 class="p-3 text-white text-center">This is a wider card with supporting text below as a natural lead-in This is a wider card with supporting </h5>
+                            </div>
                         </a>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -827,9 +828,9 @@
             <div class="col-md-4 order-fisrt order-md-last">
                 <div class="row">
                     <aside id="edition_day" class="edition_card mx-auto d-block bg-white">
-                        <h3 class="col-12 p-2 position-fixed title-label" style="">L'edition du jour</h3>
+                        <h3 class="col-12 p-2 title-label">L'edition du jour</h3>
                         <div class="mt-5">
-                            <a href="#" title="Lire"><img class="img-fluid" src="{{asset('images/images25525415.jpg')}}"></a>
+                            <a href="#" title="Lire"><img class="img-fluid" src="{{asset('images/laune.jpg')}}"></a>
                         </div>
 
                         <hr>

@@ -214,15 +214,15 @@ nav .sidenavLeft .abo-li a{
 		cursor: pointer;
 	}
 
-	.politic_content{
+	.rubric-content{
 		margin-top: 50px;
 	}
 
-	.politic_content h1{
+	.rubric-content h1{
 		font-size: 25px;
 	}
 
-	.politic_content .card .nav-pills{
+	.rubric-content .card .nav-pills{
 		font-size: 10px;
 	}
 }

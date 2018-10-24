@@ -10,7 +10,7 @@
             </a>
         </div>
         <div>
-            <span class="fa fa-search" style="color: #111;"></span>
+            <span class="fa fa-user-circle-o" style="color: #111;"></span>
         </div>
     </div>
 
@@ -31,10 +31,9 @@
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'opinions'])}}">Opinion</a></li>
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'economies'])}}">Economie</a></li>
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'enquetes'])}}">Enquêtes</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'international'])}}">International</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'internationals'])}}">International</a></li>
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'sports'])}}">Sport</a></li>
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'santes'])}}">Santé</a></li>
-            <li class="li"><a href="">Culture</a></li>
             <li class="li"><a href="">Education</a></li>
             <li class="li"><a href="">Tech-Innovation</a></li>
             <hr style="background-color: #fff;">
@@ -86,7 +85,7 @@
                     <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'politiques'])}}"><strong>Politique</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'economies'])}}"><strong>Economie</strong></a>
+                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'economies'])}}"><strong>Économie</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'opinions'])}}"><strong>Opinion</strong></a>
@@ -95,13 +94,24 @@
                     <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'enquetes'])}}"><strong>Enquêtes</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'sports'])}}"><strong>Sport</strong></a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'santes'])}}"><strong>Santé</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'internationals'])}}"><strong>International</strong></a>
+                </li>
+                <li class="dropdown nav-item">
+                  <a class="dropdown-toggle nav-link font-weight-bold" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plus
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'sports'])}}"><strong>Sport</strong></a>
+                    <a class="dropdown-item" href="#"><strong>Éducation</strong></a>
+                    <a class="dropdown-item" href="#"><strong>Tech-innovation</strong></a>
+                    <a class="dropdown-item" href=""><strong>Dossiers d'actualité</strong></a>
+                    <a class="dropdown-item" href=""><strong>Le conseil des minitres</strong></a>
+                    <a class="dropdown-item" href=""><strong>Histoire d'afrique</strong></a>
+                  </div>
                 </li>
             </ul>
             <div class="navbar-nav ml-auto">
