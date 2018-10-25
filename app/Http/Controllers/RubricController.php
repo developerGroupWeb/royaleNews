@@ -19,10 +19,11 @@ class RubricController extends Controller
         $firstTwo  = articleService::dataTheFirstTwo($rubrics);
         $firstTree = articleService::dataTheFirstTree($rubrics);
         $article   = articleService::dataArticle($rubrics);
-        return view('pages.'.$rubrics, [
-            'article'  => $article,
-            'une'      => $une,
-            'firstTwo' => $firstTwo,
+        return view('pages.rubrics', [
+            'rubrics'   => $rubrics,
+            'article'   => $article,
+            'une'       => $une,
+            'firstTwo'  => $firstTwo,
             'firstTree' => $firstTree,
         ]);
     }

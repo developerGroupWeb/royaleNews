@@ -62,10 +62,10 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link rounded font-weight-bold bg-warning text-black py-2 text-center" href="#">ABONNEMENT<br/><span class="text-white">1 mois gratuit offert</span></a>
+              <a class="nav-link rounded font-weight-bold bg-warning text-black py-2 text-center" href="">ABONNEMENT<br/><span class="text-white">1 mois gratuit offert</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-weight-bold text-dark py-3" href="{{route('rubric.all',['rubrics' => 'singin'])}}"><span class="fa fa-user-circle-o"></span> Connexion</a>
+              <a class="nav-link font-weight-bold text-dark py-3" href="{{route('members.singin')}}"><span class="fa fa-user-circle-o"></span> Connexion</a>
             </li>
           </ul>
           

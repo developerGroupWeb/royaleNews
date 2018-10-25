@@ -16,6 +16,20 @@ Route::get('/', [
     'uses' => 'HomeController@index'
 ]);
 
+Route::group(['prefix' => 'members'], function(){
+
+    Route::get('singin', [
+        'as'   => 'members.singin',
+        'uses' => 'MemberController@sing_in'
+    ]);
+
+    Route::get('singup', [
+        'as'  => 'members.singup',
+        'uses' => 'MemberController@sing_up'
+    ]);
+});
+
+
 Route::get('{rubrics}', [
     'as'   => 'rubric.all',
     'uses' => 'RubricController@all'
