@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="">
-                    <h1 class="m-4"><strong>{{$rubrics}}</strong></h1>
+                    <h1 class="m-4"><strong>{{ucfirst($rubrics)}}</strong></h1>
                 </div>
             </div>
             <hr>
@@ -25,7 +25,7 @@
                                     <p class="p-4">{{$detail->content}}</p>
                                 </a>
                                 <div class="card-footer">
-                                    <small class="text-muted">Date et time</small>
+                                    <small class="text-muted">{{$times_already($detail->start_at)}}</small>
                                 </div>
                             </div>
                         @endforeach
