@@ -82,22 +82,22 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'politiques'])}}"><strong>Politique</strong></a>
+                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'politique'])}}"><strong>Politique</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'economies'])}}"><strong>Économie</strong></a>
+                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'économie'])}}"><strong>Économie</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'opinions'])}}"><strong>Opinion</strong></a>
+                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'opinion'])}}"><strong>Opinion</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'enquetes'])}}"><strong>Enquêtes</strong></a>
+                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'enquêtes'])}}"><strong>Enquêtes</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'santes'])}}"><strong>Santé</strong></a>
+                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'santé'])}}"><strong>Santé</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'internationals'])}}"><strong>International</strong></a>
+                    <a class="nav-link" href="{{route('rubric.all',['rubrics' => 'international'])}}"><strong>International</strong></a>
                 </li>
                 <li class="dropdown nav-item">
                   <a class="dropdown-toggle nav-link font-weight-bold" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -105,12 +105,12 @@
                   </a>
 
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'sports'])}}"><strong>Sport</strong></a>
-                    <a class="dropdown-item" href="#"><strong>Éducation</strong></a>
-                    <a class="dropdown-item" href="#"><strong>Tech-innovation</strong></a>
-                    <a class="dropdown-item" href=""><strong>Dossiers d'actualité</strong></a>
-                    <a class="dropdown-item" href=""><strong>Le conseil des minitres</strong></a>
-                    <a class="dropdown-item" href=""><strong>Histoire d'afrique</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'sport'])}}"><strong>Sport</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'éducation'])}}"><strong>Éducation</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'tech-innovation'])}}"><strong>Tech-innovation</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}"><strong>Dossiers d'actualité</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}"><strong>Le conseil des minitres</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}"><strong>Histoire d'afrique</strong></a>
                   </div>
                 </li>
             </ul>
