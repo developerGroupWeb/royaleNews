@@ -38,7 +38,7 @@ class RubricController extends Controller
     public function show($pages, $date, $id, $slug)
     {
         $article = Article::where('id', $id)->get();
-        return view('pages.show', ['article' => $article]);
+        return view('pages.show', ['pages' => $pages, 'article' => $article]);
     }
 
 }

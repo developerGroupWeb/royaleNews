@@ -5,7 +5,7 @@
         <div class="rubric-content">
             <div class="container-fluid">
               <div class="row">
-                <h1 class="mx-auto mt-3"><strong>Rubrics here</strong></h1>
+                <h1 class="mx-auto mt-3"><strong>{{$pages}}</strong></h1>
               </div>
                 @foreach($article as $detail)
                     <div class="mx-auto text-center w-75">
