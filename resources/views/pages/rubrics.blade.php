@@ -1,4 +1,4 @@
-@extends('templates.template')
+ @extends('templates.template')
 
 @section('content')
     @include('templates.nav')
@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="">
-                    <h1 class="m-4"><strong>{{ucfirst($rubrics)}}</strong></h1>
+                    <h2 class="m-4" style="text-transform: uppercase;"><strong>{{ucfirst($rubrics)}}</strong></h2>
                 </div>
             </div>
             <hr>
