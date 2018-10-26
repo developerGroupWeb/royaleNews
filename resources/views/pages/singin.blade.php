@@ -85,7 +85,7 @@
 					  </div>
 					  
 					  <div class="singin" style="margin-top: 25px;">
-					  	<button type="submit"  id="singin" class="btn col-sm-8 offset-sm-2 col-8 offset-2 mt-5 singbg-btn" style="padding: 12px;"><h4>Se connecter</h4></button>
+					  	<button type="submit"  class="btn col-sm-8 offset-sm-2 col-8 offset-2 mt-5 singinButton" disabled="disabled" style="padding: 12px;"><h4>Se connecter</h4></button>
 					  </div>
 					</form>
 				</div>

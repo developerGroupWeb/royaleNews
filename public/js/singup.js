@@ -1,8 +1,14 @@
 $(function () {
 
-    $('#singup .error').css('color', 'red').css('font-style', 'italic');
+    $('#singup .error').css({
+        color: 'red',
+        fontStyle: 'italic'
+    });
     $('#singup .fa').css('cursor', 'pointer');
 
+    /**
+      *Show and hide password
+    */
     $('#fa-eye, #fa-eye-slash').click(function () {
 
         if(this.id == 'fa-eye'){
@@ -16,6 +22,9 @@ $(function () {
         }
     });
 
+    /**
+     * form processing
+     */
     function messageRequire(id){
        return $(id).next('.error').html('Your ' + $(id).attr('title') + ' is required');
     }
@@ -23,10 +32,10 @@ $(function () {
         return $(id).val();
     }
 
-    $('#singup').submit(function () {
-        var validate = true,
-            data = ['#firstname', '#surname', '#email', '#password', '#passwordConfirm'];
+    var validate = true,
+        data = ['#firstname', '#surname', '#email', '#password', '#passwordConfirm'];
 
+    $('#singup').submit(function () {
         if(!value('#inlineRadio:checked')){
             $('#inlineRadio').css('color', 'red');
             validate = false;
