@@ -81,7 +81,7 @@
 						      <input type="checkbox" checked> Rester connecter
 						    </label>
 						  </div>
-						  <div class="pull-right forget-password"><a href="mdp_oublie.php" style="color: #333;">Mot de passe oublié?</a></div>
+						  <div class="pull-right forget-password"><a href="" style="color: #333;">Mot de passe oublié?</a></div>
 					  </div>
 					  
 					  <div class="singin" style="margin-top: 25px;">
