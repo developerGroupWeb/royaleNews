@@ -67,12 +67,11 @@ $(function () {
     function value(id) {
         return $(id).val();
     }
-
+    
     var validate = true,
         data = ['#email', '#password'];
 
     $('#singin').submit(function () {
-        
         for(var i = 0; i < data.length; i++){
             if(value(data[i]) == ''){
                 messageRequire(data[i]);
