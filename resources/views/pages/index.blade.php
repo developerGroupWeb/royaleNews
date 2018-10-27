@@ -128,7 +128,7 @@
  
                 <div class="row">
                      <ul class="list-unstyled col-12">
-                        @foreach($articlePriorityTreeMaxDataSizeOnePerLine as $detail)
+                        @foreach($articlePriorityTreeMaxDataTreeOnePerLine as $detail)
                          <li class="media mt-4 mb-2 bg-white p-3">
                              <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                                  <img class="mr-3 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Generic plac eholder image">
@@ -146,15 +146,15 @@
                 </div>
  
                 <div class="row">
-                     <div class="card-columns">
-                         @foreach($articlePriorityTreeMaxDataTreeTreePerLine as $detail)
+                     <div class="card-deck mb-4">
+                         @foreach($articlePriorityTreeMaxDataSixTreePerLine as $detail)
                          <div class="card">
                              <div class="card-body">
                                  <h5 class="card-title"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h5>
                                  <small class="text-muted">{{$detail->rubric}}</small>
                                  <p class="card-text">{{$detail->content}}</p>
-                                 <p class="card-text"><small class="text-muted">{{$times_already($detail->start_at)}}</small></p>
                              </div>
+                             <div class="card-footer"><small class="text-muted">{{$times_already($detail->start_at)}}</small></div>
                          </div>
                          @endforeach
                      </div>
