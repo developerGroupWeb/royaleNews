@@ -111,4 +111,5 @@
 		</div>
 	</footer>
 </div>
+<script src="{{asset('js/singin.js')}}"></script>
 @stop

@@ -1,5 +1,5 @@
 $(function () {
-
+    var validate = true;
     $('#singin .error').css({
         color: 'red',
         fontStyle: 'italic'
@@ -68,8 +68,8 @@ $(function () {
         return $(id).val();
     }
     
-    var validate = true,
-        data = ['#email', '#password'];
+
+        var data = ['#email', '#password'];
 
     $('#singin').submit(function () {
         for(var i = 0; i < data.length; i++){
@@ -83,7 +83,7 @@ $(function () {
 
     $('#singin #email').keyup(function () {
 
-        if(value('#email').match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i)){
+        if($(this).val().match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i)){
             $(this).next('.error').fadeOut();
             validate = true;
         }else{

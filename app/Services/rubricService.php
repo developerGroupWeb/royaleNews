@@ -9,7 +9,7 @@
 namespace App\Services;
 use App\models\Article;
 
-class articleService
+class rubricService
 {
     static function dataArticle($rubrics)
     {

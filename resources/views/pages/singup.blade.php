@@ -137,4 +137,5 @@
     </div>
   </footer>
 </div>
+<script src="{{asset('js/singup.js')}}"></script>
   @stop
