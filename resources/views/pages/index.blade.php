@@ -147,7 +147,7 @@
  
                 <div class="row">
                      <div class="card-columns">
-                         @foreach($articlePriorityTreeMaxDataTreeTreePerLine as $detail)
+                         @foreach($articlePriorityTreeMaxDataSixTreePerLine as $detail)
                          <div class="card">
                              <div class="card-body">
                                  <h5 class="card-title"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h5>
