@@ -6,7 +6,20 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 order-last order-md-first">
+            <div class="col-lg-8 order-last order-lg-first">
+                <div class="row d-none d-md-block d-lg-none">
+                    <aside id="edition_day" class="edition_card mx-auto bg-white">
+                        <h3 class="col-12 p-2 title-label">L'edition du jour</h3>
+                        <div class="mt-5 mx-auto">
+                            <a href="#" title="Lire"><img class="img-fluid" src="{{asset('images/laune.jpg')}}"></a>
+                        </div>
+
+                        <hr>
+                        <div class="d-none d-lg-block">
+                            <h5 class="p-2">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h5>
+                        </div>
+                    </aside>
+                </div>
 
                 <div class="row d-none d-md-block">
                     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
@@ -135,7 +148,7 @@
 
 
                 <div class="row">
-                    <div class="card-deck">
+                    <div class="card-deck mx-auto">
                         <div class="card">
                             <a href="#"><img class="img-fluid w-100" style="max-height: 400px;" src="{{asset('images/images25525415.jpg')}}" alt="Card image cap">
                                 <span class="badge badge-primary">Chronique</span>
@@ -179,7 +192,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card-deck">
+                    <div class="card-deck mx-auto">
                         <div class="card">
                             <a href=""><img class="img-fluid w-100" src="{{asset('images/images25525415.jpg')}}" alt="Card image cap">
                                 <span class="badge badge-pill badge-primary">Entretiens</span>
@@ -286,7 +299,7 @@
                         </ol>
 
 
-                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner mx-auto" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card-deck">
                                     <a href="#">
@@ -357,7 +370,7 @@
                             </div>
 
                             <hr>
-                            <small class="text-right d-block opinion-items"><strong><a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i> PLUS D'OPINONS</a></strong></small>
+                            <small class="text-right d-block opinion-items mr-3"><strong><a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i> PLUS DE DOSSIERS</a></strong></small>
                             <hr>
                         </div>
 
@@ -414,6 +427,9 @@
                                     </div></a>
                             </div>
                         </div>
+
+                        <hr class="bg-white">
+                        <small class="text-right d-block opinion-items mr-3"><strong><a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i>TOUTE LA ROYALENEWS TV</a></strong></small>
                     </div>
                 </div>
 
@@ -817,7 +833,7 @@
             </div>
 
 
-            <div class="col-md-4 order-fisrt order-md-last">
+            <div class="col-lg-4 order-fisrt order-lg-last d-md-none d-lg-block">
                 <div class="row">
                     <aside id="edition_day" class="edition_card mx-auto d-block bg-white">
                         <h3 class="col-12 p-2 title-label">L'edition du jour</h3>
@@ -831,7 +847,6 @@
                         </div>
                     </aside>
                 </div>
-
             </div>
         </div>
     </div>
