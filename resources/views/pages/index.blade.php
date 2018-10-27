@@ -63,42 +63,22 @@
  
                 <div class="d-block d-md-none row">
                     <div class="card">
-<<<<<<< HEAD
-                         <a href="#">
-                             <img class="card-img-top" src="{{asset('images/gvbuyb.jpg')}}" alt="Card image cap">
-                             <span class="badge badge-primary">Politique</span>
-                             <div class="w-100" style="position: absolute; bottom: 50px; background: rgb(0,0,0,0.6);">
-                                 <h5 class="p-3 text-white text-center"></h5>
-                             </div>
-                         </a>
-                         <div class="card-footer">
-                             <small class="text-muted">Last updated 3 mins ago</small>
-                         </div>
-=======
                         <a href="#">
                             <div class="p-2 bg-rnews"><strong>A LA UNE</strong></div>
                             <img class="card-img-top" src="{{asset('images/gvbuyb.jpg')}}" alt="Card image cap">
-<<<<<<< HEAD
-                            <span class="badge badge-primary">Politique</span>
-                            <div class="w-100" style="position: absolute; bottom: 50px; background: rgba(0,0,0,0.6);">
-                                <h5 class="p-3 text-white text-center"></h5>
-                            </div>
-=======
 
                             <span class="font-weight-bold m-2">Rubrics</span>
                             <h5 class="p-3 card-title text-center">Title</h5>
->>>>>>> 12aae64717a726a4f901946f92c86ae3a5e24526
                         </a>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
->>>>>>> 1f8135dca05c661f3b1948f9571c1a2998b28589
                     </div>
                 </div>
  
                 <hr>
  
-                <div class="row">
+                <div class="">
                     <div class="card-columns">
                         @foreach($articlePriorityTwo as $detail)
                          <div class="card">
@@ -107,7 +87,7 @@
                                  <div class="card-body">
                                      <span class="badge-small badge-primary font-weight-bold rounded px-1">{{ucfirst($detail->rubric)}}</span>
                                      <h5 class="card-title">{{$detail->title}}</h5>
-                                     <p class="card-text">{{$detail->content}}</p>
+                                     <!--<p class="card-text">{{$detail->content}}</p>-->
                                  </div>
                              </a>
                              <div class="card-footer">
@@ -129,7 +109,7 @@
                 <div class="row">
                      <ul class="list-unstyled col-12">
                         @foreach($articlePriorityTreeMaxDataTreeOnePerLine as $detail)
-                         <li class="media mt-4 mb-2 bg-white p-3">
+                         <li class="media mt-4 mb-2 bg-white p-3 row">
                              <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                                  <img class="mr-3 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Generic plac eholder image">
                              </a>
@@ -145,10 +125,8 @@
                      </ul>
                 </div>
  
-                <div class="row">
-
-                     <div class="card-deck mb-4">
-                     
+                <div class="mb-4">
+                     <div class="card-columns">
                          @foreach($articlePriorityTreeMaxDataSixTreePerLine as $detail)
                          <div class="card">
                              <div class="card-body">
@@ -163,23 +141,26 @@
                 </div>
 
                 <div class="row">
-                    <div class="card-deck">
+                    <div class="card-deck mx-auto">
                         <div class="card">
-                            <a href="#"><img class="img-fluid w-100" style="max-height: 400px;" src="{{asset('images/images25525415.jpg')}}" alt="Card image cap">
-                                <span class="badge badge-primary">Chronique</span>
-                                 <div class="card-body border-bottom">
-                                     <h5>his is a longer card with supporting text below as a natural</h5>
-                                 </div></a>
- 
-                             <div class="p-2" style="font-size: 13px;">
-                                 <p class="border-bottom pb-3 font-weight-bold"><i class="fa fa-plus-square-o" aria-hidden="true"></i> <a href="#">his is a longer card with supporting text below as a natural</a></p>
- 
-                                 <p class="text-right"><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i><strong> voir toutes les chroniques</strong></a></p>
-                             </div>
-                         </div>
+                            <div class="card-header font-weight-bold">CHRONIQUES</div>
+                            
+                            <ul class="list-group">
+                                <li  class="list-group-item">
+                                     <div class="">
+                                         <p class="mb-1"><a href="">List group item headingList group item headingList group item heading group item headingList</a></p>
+
+                                         <small class="text-muted">3 days ago</small>
+                                     </div>
+                                </li>
+
+
+                                <li class="list-group-item text-right"><a href=""><small><i class="fa fa-angle-double-right" aria-hidden="true"></i><strong> Voir tous les chroniques</strong></small></a></li>
+                            </ul>
+                        </div>
  
                          <div class="card">
-                             <div class="card-header font-weight-bold">
+                             <div class="card-header font-weight-bold text-white bg-danger">
                                  TOP INFOS
                              </div>
  
@@ -207,7 +188,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="card-deck">
+                    <div class="card-deck mx-auto">
                         <div class="card">
                             <a href=""><img class="img-fluid w-100" src="{{asset('images/images25525415.jpg')}}" alt="Card image cap">
                                 <span class="badge badge-pill badge-primary">Entretiens</span>
@@ -314,7 +295,7 @@
 
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <div class="card-deck">
+                                <div class="card-deck mx-auto">
                                     <a href="#">
                                          <div class="card">
                                              <img class="card-img-top" src="https://placehold.it/150x80?text=Another Image Maybe" alt="Card image cap">
@@ -349,7 +330,7 @@
                              </div>
  
                              <div class="carousel-item">
-                                 <div class="card-deck">
+                                 <div class="card-deck mx-auto">
                                      <a href="#">
                                          <div class="card">
                                              <img class="card-img-top" src="https://placehold.it/150x80?text=Another Image Maybe" alt="Card image cap">
