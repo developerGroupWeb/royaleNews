@@ -67,11 +67,11 @@
                 <div class="d-block d-md-none row">
                     <div class="card">
                         <a href="#">
+                            <div class="p-2 bg-rnews"><strong>A LA UNE</strong></div>
                             <img class="card-img-top" src="{{asset('images/gvbuyb.jpg')}}" alt="Card image cap">
-                            <span class="badge badge-primary">Politique</span>
-                            <div class="w-100" style="position: absolute; bottom: 50px; background: rgb(0,0,0,0.6);">
-                                <h5 class="p-3 text-white text-center"></h5>
-                            </div>
+
+                            <span class="font-weight-bold m-2">Rubrics</span>
+                            <h5 class="p-3 card-title text-center">Title</h5>
                         </a>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
