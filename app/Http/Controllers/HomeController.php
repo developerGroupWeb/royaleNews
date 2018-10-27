@@ -18,7 +18,7 @@ class HomeController extends Controller
         return view('pages.index', ['unes' => $unes,
                                           'suites' => $suites,
                                           'articlePriorityTwo' => $articlePriorityTwo,
-                                          'articlePriorityTreeMaxDataSizeOnePerLine' => $articlePriorityTreeMaxDataTreeOnePerLine,
+                                          'articlePriorityTreeMaxDataTreeOnePerLine' => $articlePriorityTreeMaxDataTreeOnePerLine,
                                           'articlePriorityTreeMaxDataTreeTreePerLine' => $articlePriorityTreeMaxDataTreeTreePerLine,
         ]);
     }
