@@ -100,18 +100,21 @@
  
                 <div class="row">
                     <div class="card-columns">
-                        <div class="card">
-                            <a href="#"><img class="card-img-top" src="{{asset('images/images25525415.jpg')}}" alt="Card image cap">
-                                <div class="card-body">
-                                     <span class="badge-small badge-primary font-weight-bold rounded px-1">Primary</span>
-                                     <h5 class="card-title">Une de chaque categarie de la position priorite deux. Trois articles par ligne</h5>
-                                     <p class="card-text"></p>
+                        @foreach($articlePriorityTwo as $detail)
+                         <div class="card">
+                             <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                                 <img class="card-img-top" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}"/>
+                                 <div class="card-body">
+                                     <span class="badge-small badge-primary font-weight-bold rounded px-1">{{ucfirst($detail->rubric)}}</span>
+                                     <h5 class="card-title">{{$detail->title}}</h5>
+                                     <p class="card-text">{{$detail->content}}</p>
                                  </div>
-                            </a>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                        </div>
+                             </a>
+                             <div class="card-footer">
+                                 <small class="text-muted">{{$times_already($detail->start_at)}}</small>
+                             </div>
+                         </div>
+                        @endforeach
                     </div>
  
                     <hr>
@@ -125,31 +128,35 @@
  
                 <div class="row">
                      <ul class="list-unstyled col-12">
-                         <li class="row media mt-4 mb-2 bg-white p-3">
-                             <a href="">
-                                 <img class="mr-3 img-fluid" src="https://placehold.it/150x100?text=Another Image Maybe" alt="Generic plac eholder image">
+                        @foreach($articlePriorityTreeMaxDataSizeOnePerLine as $detail)
+                         <li class="media mt-4 mb-2 bg-white p-3">
+                             <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                                 <img class="mr-3 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Generic plac eholder image">
                              </a>
                              <div class="media-body">
                                  <a href="">
-                                     <h6 class="text-muted">Rubrics</h6>
-                                     <h4 class="mt-0 mb-1">Une de chaque categarie de la position priorite trois. Six rubriques.</h4>
+                                     <h6 class="text-muted">{{$detail->rubric}}</h6>
+                                     <h4 class="mt-0 mb-1">{{$detail->title}}</h4>
                                  </a>
-                                 <span class="text-muted">date and time</span>
+                                 <span class="text-muted">{{$times_already($detail->start_at)}}</span>
                              </div>
                          </li>
+                        @endforeach
                      </ul>
                 </div>
  
                 <div class="row">
                      <div class="card-columns">
+                         @foreach($articlePriorityTreeMaxDataTreeTreePerLine as $detail)
                          <div class="card">
                              <div class="card-body">
-                                 <h5 class="card-title"><a href="">Une de chaque categarie de la position priorite trois. Une ligne</a></h5>
-                                 <small class="text-muted">Rubrics</small>
-                                 <p class="card-text">Une de chaque categarie de la position priorite trois.</p>
-                                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                 <h5 class="card-title"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h5>
+                                 <small class="text-muted">{{$detail->rubric}}</small>
+                                 <p class="card-text">{{$detail->content}}</p>
+                                 <p class="card-text"><small class="text-muted">{{$times_already($detail->start_at)}}</small></p>
                              </div>
                          </div>
+                         @endforeach
                      </div>
                 </div>
 
