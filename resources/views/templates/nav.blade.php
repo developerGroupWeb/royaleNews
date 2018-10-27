@@ -10,7 +10,9 @@
             </a>
         </div>
         <div>
+          <a href="{{route('members.singin')}}">
             <span class="fa fa-user-circle-o" style="color: #111;"></span>
+          </a>
         </div>
     </div>
 
@@ -29,20 +31,20 @@
                 </form>
             </li>
             <hr style="background-color: #fff;">
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'politiques'])}}">Politique</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'opinions'])}}">Opinion</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'economies'])}}">Economie</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'enquetes'])}}">Enquêtes</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'internationals'])}}">International</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'sports'])}}">Sport</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'santes'])}}">Santé</a></li>
-            <li class="li"><a href="">Education</a></li>
-            <li class="li"><a href="">Tech-Innovation</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'politique'])}}">Politique</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'opinion'])}}">Opinion</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'économie'])}}">Économie</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'enquêtes'])}}">Enquêtes</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'international'])}}">International</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'sport'])}}">Sport</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'santé'])}}">Santé</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'éducation'])}}">Éducation</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'tech-innovation'])}}">Tech-Innovation</a></li>
             <hr style="background-color: #fff;">
             <li class="li"><a href="">Top info</a></li>
-            <li class="li"><a href="">Dossiers d'actualité</a></li>
-            <li class="li"><a href="">Le conseil des minitres</a></li>
-            <li class="li"><a href="">Histoire d'afrique</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}">Dossiers d'actualité</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}">Le conseil des minitres</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}">Histoires d'afrique</a></li>
             <li class="li"><a href="">Publicité</a></li>
             <hr style="background-color: #fff;">
           </ul>
@@ -112,7 +114,7 @@
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'tech-innovation'])}}"><strong>Tech-innovation</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}"><strong>Dossiers d'actualité</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}"><strong>Le conseil des minitres</strong></a>
-                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}"><strong>Histoire d'afrique</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}"><strong>Histoires d'afrique</strong></a>
                   </div>
                 </li>
             </ul>
@@ -130,14 +132,16 @@
       <div class="bg-dark py-2 d-none d-md-block">
         <form class="col-6 offset-3 d-inline-flex" action="" method="">
           <input type="search" name="" id="searchBar" class="w-100 pl-3 py-2">
-          <button type="submit" class="btn" role="button">cherche</button>
+          <button type="submit" class="btn" role="button">chercher</button>
         </form>
       </div>
-    </div>
+    </div><!--end-->
 
     <div class="d-none d-md-block">
       <div class="navbar bg-danger" style=" background: ;">
-        <p style="height: 10px; color: #fff;"><strong class="mr-2">EN CE MOMENT</strong><span style="border-right: 2px solid #fff;"></span></p>
+        <p style="height: 10px; color: #fff;"><strong class="mr-2">EN CE MOMENT</strong><span style="border-right: 2px solid #fff;"></span>
+          ...........
+        </p>
       </div>
     </div>
 
