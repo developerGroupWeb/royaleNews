@@ -20,7 +20,7 @@ class HomeController extends Controller
                                           'articlePriorityTwo' => $articlePriorityTwo,
                                           'articlePriorityTreeMaxDataTreeOnePerLine' => $articlePriorityTreeMaxDataTreeOnePerLine,
                                           'articlePriorityTreeMaxDataSixTreePerLine' => $articlePriorityTreeMaxDataSixTreePerLine,
-                                          
+
         ]);
     }
 }

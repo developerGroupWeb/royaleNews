@@ -146,11 +146,9 @@
                 </div>
  
                 <div class="row">
-<<<<<<< HEAD
+
                      <div class="card-deck mb-4">
-=======
-                     <div class="card-columns">
->>>>>>> c59a478e0bbd714e4e6c9f868df889c99a433443
+                     
                          @foreach($articlePriorityTreeMaxDataSixTreePerLine as $detail)
                          <div class="card">
                              <div class="card-body">
