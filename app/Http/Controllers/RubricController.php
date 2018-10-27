@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Services\articleService;
+use App\Services\rubricService;
 use App\models\Article;
 
 class RubricController extends Controller
@@ -15,10 +15,10 @@ class RubricController extends Controller
      */
     public function all($rubrics)
     {
-        $une       = articleService::dataUne($rubrics);
-        $firstTwo  = articleService::dataTheFirstTwo($rubrics);
-        $firstTree = articleService::dataTheFirstTree($rubrics);
-        $article   = articleService::dataArticle($rubrics);
+        $une       = rubricService::dataUne($rubrics);
+        $firstTwo  = rubricService::dataTheFirstTwo($rubrics);
+        $firstTree = rubricService::dataTheFirstTree($rubrics);
+        $article   = rubricService::dataArticle($rubrics);
         return view('pages.rubrics', [
             'rubrics'   => $rubrics,
             'article'   => $article,

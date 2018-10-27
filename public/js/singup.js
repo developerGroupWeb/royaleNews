@@ -1,4 +1,5 @@
 $(function () {
+    var validate = true;
 
     $('#singup .error').css({
         color: 'red',
@@ -32,17 +33,18 @@ $(function () {
         return $(id).val();
     }
 
-    var validate = true,
-        data = ['#firstname', '#surname', '#email', '#password', '#passwordConfirm'];
+
+        var datas = ['#firstname', '#surname', '#email', '#password', '#passwordConfirm'];
 
     $('#singup').submit(function () {
+
         if(!value('#inlineRadio:checked')){
             $('#inlineRadio').css('color', 'red');
             validate = false;
         }
-        for(var i = 0; i < data.length; i++){
-            if(value(data[i]) == ''){
-                messageRequire(data[i]);
+        for(var i = 0; i < datas.length; i++){
+            if(value(datas[i]) == ''){
+                messageRequire(datas[i]);
                 validate = false;
             }
         }
@@ -55,7 +57,7 @@ $(function () {
         if($(this).val().length < 4){
             $(this).next('.error').fadeIn('slow').html('Type at least 5 characters');
             validate = false;
-        }else if(value('#firstname').match(/^[a-z]+$/i)){
+        }else if(value('#firstname').match(/^[a-zA-Zéèêëíìîïñóòôöõúùûüýÿæ -]+$/i)){
             $(this).next('.error').fadeOut();
             validate = true;
         }else{
@@ -64,12 +66,13 @@ $(function () {
         }
         return validate
     });
+
     $('#surname').keyup(function () {
 
         if($(this).val().length < 4){
             $(this).next('.error').fadeIn('slow').html('Type at least 5 characters');
             validate = false;
-        }else if(value('#surname').match(/^[a-z]+$/i)){
+        }else if(value('#surname').match(/^[a-zA-Zéèêëíìîïñóòôöõúùûüýÿæ -]+$/i)){
             $(this).next('.error').fadeOut();
             validate = true;
         }else{
@@ -78,7 +81,8 @@ $(function () {
         }
         return validate
     });
-    $('#email').keyup(function () {
+
+    $('#singup #email').keyup(function () {
 
         if(value('#email').match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i)){
             $(this).next('.error').fadeOut();
@@ -90,7 +94,7 @@ $(function () {
         return validate
     });
 
-    $('#password').keyup(function () {
+    $('#singup #password').keyup(function () {
 
         if($(this).val().length < 8){
             $(this).next('.error').fadeIn('slow').html('Type at least 8 characters');
@@ -102,7 +106,7 @@ $(function () {
         return validate
     });
 
-    $('#passwordConfirm').keyup(function () {
+    $(' #singup #passwordConfirm').keyup(function () {
 
         if($(this).val() != $('#password').val()){
             $(this).next('.error').fadeIn('slow').html('Your passwords are not identical');
@@ -111,6 +115,7 @@ $(function () {
             $(this).next('.error').fadeOut();
             validate = true;
         }
+        return validate
     });
 
 
