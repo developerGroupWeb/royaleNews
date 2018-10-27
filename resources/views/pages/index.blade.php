@@ -70,7 +70,7 @@
                         <a href="#">
                             <img class="card-img-top" src="{{asset('images/gvbuyb.jpg')}}" alt="Card image cap">
                             <span class="badge badge-primary">Politique</span>
-                            <div class="w-100" style="position: absolute; bottom: 50px; background: rgb(0,0,0,0.6);">
+                            <div class="w-100" style="position: absolute; bottom: 50px; background: rgba(0,0,0,0.6);">
                                 <h5 class="p-3 text-white text-center"></h5>
                             </div>
                         </a>
