@@ -27,6 +27,11 @@ Route::group(['prefix' => 'members'], function(){
         'as'  => 'members.singup',
         'uses' => 'MemberController@sing_up'
     ]);
+
+    Route::get('abonnement', [
+        'as'   => 'members.singin',
+        'uses' => 'MemberController@abonnement'
+    ]);
 });
 
 

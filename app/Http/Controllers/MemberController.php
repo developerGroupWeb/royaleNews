@@ -19,4 +19,8 @@ class MemberController extends Controller
     function sing_up(){
         return view('pages.singup');
     }
+
+    function abonnement(){
+        return view('pages.abonnement');
+    }
 }

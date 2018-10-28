@@ -147,15 +147,19 @@
                             
                             <ul class="list-group">
                                 <li  class="list-group-item">
-                                     <div class="">
-                                         <p class="mb-1"><a href="">List group item headingList group item headingList group item heading group item headingList</a></p>
+                                    <a href="" class="mb-2"><h5>
+                                        <small class="text-muted">Rubrics</small>
+                                        ici dans le tag li affichera une chronique de chak categorie. une par ligne. 5 maxi a afficher
+                                    </h5></a>
 
+                                    <div>
+                                        <span><a href="">Par name autor</a></span>
                                          <small class="text-muted">3 days ago</small>
-                                     </div>
+                                    </div>
                                 </li>
 
 
-                                <li class="list-group-item text-right"><a href=""><small><i class="fa fa-angle-double-right" aria-hidden="true"></i><strong> Voir tous les chroniques</strong></small></a></li>
+                                <li class="list-group-item text-right"><a href=""><small><i class="fa fa-angle-double-right" aria-hidden="true"></i><strong> Voir toutes les chroniques</strong></small></a></li>
                             </ul>
                         </div>
  
@@ -170,8 +174,9 @@
                                          <span class="badge-small p-2 mb-1 rounded font-weight-bold text-white">1</span>
                                      </div>
                                      <div class="">
-                                         <small >3 days ago</small>
-                                         <p class="mb-1"><a href="">List group item headingList group item headingList group item heading</a></p>
+                                         <p class="mb-1"><a href="">ici dans le tag li affichera une info top de chak categorie. une par ligne. 5 maxi a afficher</a></p>
+
+                                         <small class="text-muted">3 days ago</small>
                                      </div>
                                  </li>
  
@@ -190,18 +195,30 @@
                 <div class="row">
                     <div class="card-deck mx-auto">
                         <div class="card">
-                            <a href=""><img class="img-fluid w-100" src="{{asset('images/images25525415.jpg')}}" alt="Card image cap">
-                                <span class="badge badge-pill badge-primary">Entretiens</span>
- 
+                            <div class="card-header font-weight-bold">ENTRETIENS</div>
+
+                            <a href="">
+                                <img class="img-fluid w-100" src="{{asset('images/images25525415.jpg')}}" alt="Card image cap">
+
                                  <div class="card-body border-bottom">
-                                     <h5>his is a longer card with supporting text below as a natural</h5>
-                                 </div></a>
+                                     <h5>ici dans le tag 'a' affichera la derniere entretien ajoutee.</h5>
+
+                                     <small class="text-muted">3 days ago</small>
+                                 </div>
+                             </a>
  
-                             <div class="p-2" style="font-size: 13px;">
-                                 <p class="border-bottom font-weight-bold pb-3"><i class="fa fa-plus-square-o" aria-hidden="true"></i> <a href="#">his is a longer card with supporting text below as a natural</a></p>
+                             <ul class="list-group">
+
+                                 <li  class="list-group-item">
+                                     <div class="">
+                                         <p class="mb-1"><a href="">ici dans le tag li affichera une entretien. une par ligne. 2 maxi a afficher</a></p>
+
+                                         <small class="text-muted">3 days ago</small>
+                                     </div>
+                                 </li>
  
-                                 <p class="text-right"><a href="#"><i class="fa fa-angle-double-right" aria-hidden="true"></i><strong> voir tous les sante</strong></a></p>
-                             </div>
+                                 <li class="list-group-item text-right"><a href=""><small><i class="fa fa-angle-double-right" aria-hidden="true"></i><strong> Voir tous</strong></small></a></li>
+                             </ul>
                         </div>
  
                         <div class="card">
@@ -209,13 +226,11 @@
                                  LES PLUS LUS
                              </div>
                              <ul class="list-group list-group-flush">
-                                  <li  class="list-group-item d-flex">
-                                     <div class="mr-3">
-                                         <span class="badge-small p-2 mb-1 rounded font-weight-bold text-white">1</span>
-                                     </div>
+                                  <li  class="list-group-item">
                                      <div class="">
-                                         <small >3 days ago</small>
-                                         <p class="mb-1"><a href="">List group item headingList group item headingList group item heading</a></p>
+                                         <p class="mb-1"><a href="">ici dans le tag li affichera une info des plus lues de chak categorie. une par ligne. 5 maxi a afficher</a></p>
+
+                                         <small class="text-muted">3 days ago</small>
                                      </div>
                                  </li>
  
@@ -386,7 +401,7 @@
                      </div>
                 </div>
  
-                 <div class="row pb-4 mb-4" style="background-color: #333;">
+                 <div class="row pb-4 mb-4" style="background-color: #000;">
                      <div class="col-12 sections-titles">
                          <div class="row">
                              <h3 style="border-top: 4px solid #1abc9c; color: #fff; padding: 10px;" class="w-100 d-block text-center">
