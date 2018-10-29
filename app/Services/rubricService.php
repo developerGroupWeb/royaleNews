@@ -11,10 +11,10 @@ use App\models\Article;
 
 class rubricService
 {
-    static function dataArticle($rubrics)
+    static function foundArticle($rubrics)
     {
-        return $article = Article::where('rubric', $rubrics)
-                                 ->get();
+          return $article = Article::where(['rubric' => $rubrics]);
+         //dd($article->exists());
     }
     static function dataTheFirstTwo($rubrics)
     {

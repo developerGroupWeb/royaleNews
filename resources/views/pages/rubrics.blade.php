@@ -16,6 +16,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <hr class="row">
+    @if($article->exists() == true)
                     <div class="row">
                         @foreach($une as $detail)
                             <div class="card mb-4 bg-white">
@@ -62,6 +63,7 @@
                             @endforeach
                         </div>
                     </div>
+
 
                     <div class="row">
                         <ul class="list-unstyled">
@@ -136,5 +138,14 @@
 
             </div>
         </div>
+    @else
+        <h2><strong>Error 404</strong></h2>
+            <div class="alert-danger alert">Page non trouvée</div>
+        <em>L'adresse a été saisie de manière erronée ou la page recherchée a été déplacée, mise à jour ou effacée.</em>
+
+
+    </div><!-- I added this << div >> you can verify if it's correct, i think what its closer <div class="rubric-content">-->
+
+    @endif
 
 @stop

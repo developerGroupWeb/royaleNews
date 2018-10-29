@@ -18,7 +18,7 @@ class RubricController extends Controller
         $une       = rubricService::dataUne($rubrics);
         $firstTwo  = rubricService::dataTheFirstTwo($rubrics);
         $firstTree = rubricService::dataTheFirstTree($rubrics);
-        $article   = rubricService::dataArticle($rubrics);
+        $article   = rubricService::foundArticle($rubrics);
         return view('pages.rubrics', [
             'rubrics'   => $rubrics,
             'article'   => $article,
