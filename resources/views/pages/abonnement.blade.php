@@ -3,8 +3,8 @@
 @section('content')
 
 <div class="contentAbo">
-	<div class="contentAbo-home">
-		<nav class="navbar navbar-expand-sm px-5 shadow bg-light">
+	<div class="contentAbo-home" style="background: #ecf2f4;">
+		<nav class="navbar navbar-expand-sm px-5 shadow" >
 			<a class="navbar-brand" href="{{route('root_path')}}" style="color: #fff;">
 				<h3 class="font-weight-bold" style="color: #000;">LA ROYALE <span class="title-label pt-0 px-2 pb-1 rounded">News</span>
 				</h3>
@@ -18,7 +18,7 @@
 			    </ul>
 		    </div>
 		</nav>
-
+		
 	</div>
 </div>
 
