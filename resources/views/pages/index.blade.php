@@ -101,8 +101,33 @@
                 </div>
  
                 <div class="row">
-                     <div class="mb-4 bg-rnews">
-                         <h1>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h1>
+                     <div class="mb-4 bg-warning col-12 py-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="row">
+                                    <img src="{{asset('images/E-ABO-100Num-T-300x250.png')}}" style="" class="img-fluid mx-auto">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <h3 class="font-weight-bold text-center mx-auto">Abonnez-vous <span class="text-white"> à l'offre 100% numérique</span></h3>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <ul class="row mx-auto" style="font-size: 13px;">
+                                            <li>Accédez en illimité à <strong>l'intégralité des contenus</strong> sur tous vos écrans</li>
+                                            <li>Téléchargez <strong>votre journal en version numérique dès 7H</strong></li>
+                                            <li>Profitez d'une navigation <strong>sans publicité</strong></li>
+                                            <li>Bénéficiez d'un <strong>espace privilège</strong> réservé uniquement aux abonnés </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="row"><a href="" class="btn bg-danger px-3 py-2 mt-5 text-white mx-auto"><h5>JE M'ABONNE</h5></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                      </div>
                 </div>
  

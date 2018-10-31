@@ -10,7 +10,7 @@
 	    <div class="collapse navbar-collapse">
 		    <ul class="navbar-nav ml-auto">
 		      	<li class="nav-item">
-		      	  	<a href="abonnement.php" class="nav-link btn px-4 bg-warning" style=" color: #000;"><strong>ABONNEZ-VOUS</strong>
+		      	  	<a href="{{route('members.abonnement')}}" class="nav-link btn px-4 bg-warning" style=" color: #000;"><strong>ABONNEZ-VOUS</strong>
 		      	  	</a>
 		      	</li>
 		    </ul>
