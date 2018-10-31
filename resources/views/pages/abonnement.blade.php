@@ -33,14 +33,8 @@
 						<div class="col-md-8 offset-md-2 text-light pb-4">
 							<h2 class="mx-auto text-center">TOUTE L'ACTUALITÉ ADAPTÉE À VOTRE BESOIN.</h2>
 							<h5 class="mx-auto text-center">La Royale Presse, une experience unique à vivre au quotidien.</h5>
+							<h5 class="px-3 mx-auto text-center">Un accès illimité pour mieux comprendre l'actulité.</h5>
 						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 pt-5 pb-4 order-first order-md-last">
-					<div class="row">
-						<h4 class="mx-auto font-weight-bold text-center">LA ROYALE NEWS <span class="text-white">PREMIUM</span></h4>
-						<h5 class="px-3 mx-auto text-center">Un accès illimité pour mieux comprendre l'actulité.</h5>
 					</div>
 				</div>
 			</div>
@@ -101,41 +95,74 @@
 
 		<div class="col-lg-10 offset-lg-1">
 			<div class="row">
-				<div class="col-md-5 border">
+				<div class="col-md-5 border mb-4">
 					<div class="row">
-						<div class="col-12 bg-dark pt-4 rounded-top">
+						<div class="col-12 bg-dark py-4 rounded-top">
 							<div class="row">
 								<div class="mx-auto"><img src="{{asset('images/multi-device-black-2.png')}}"></div>
 							</div>
 							<div class="row">
 								<h2 class="text-center mx-auto text-white my-2">Standard</h2>
 							</div>
-							<div class="mx-auto text-center mb-5 text-white">Web + Mobile + Tablette</div>
+							<div class="mx-auto text-center mb-4 text-white">Web + Mobile + Tablette</div>
+							<h4 class="font-weight-bold mx-auto mb-0 text-center text-white" id="xbar"><span class="mr-4">2$</span> 0.99$</h4>
+							<div class="mx-auto text-center text-light">Par semaine pour trois mois</div>
+						</div>
+
+						<div class="card-body">
+							<ul class="" style="padding-top: 100px;">
+								<li>Accédez en illimité à <strong>l'intégralité des contenus</strong> sur tous vos écrans</li>
+								<li>Téléchargez <strong>votre journal en version numérique dès 7H</strong></li>
+								<li>Profitez d'une navigation <strong>sans publicité</strong></li>
+								<li>Bénéficiez d'un <strong>espace privilège</strong> réservé uniquement aux abonnés </li>
+								<li>Intégrer le club des lecteurs de la RoyaleNews</li>
+								<li>Diponibilité de toutes les archives de la RoyaleNews</li>
+							</ul>
+
+							<div class="text-center"><a href="" class="btn bg-warning font-weight-bold px-4 py-2" style="color: #000;">JE M'ABONNE</a></div>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-2"></div>
 
-				<div class="col-md-5 border">
+				<div class="col-md-5 border mb-4">
 					<div class="row">
-						<div class="col-12 bg-info pt-4 rounded-top">
+						<div class="col-12 bg-info py-4 rounded-top">
 							<div class="row">
 								<div class="mx-auto"><img src="{{asset('images/multi-device-black-2.png')}}"></div>
 							</div>
 							<div class="row">
 								<h2 class="text-center mx-auto text-white my-2">Premium</h2>
 							</div>
-							<div class="mx-auto text-center mb-5 text-white">Web + Mobile + Tablette + Magazine</div>
+							<div class="mx-auto text-center mb-4 text-white">Web + Mobile + Tablette + Magazine</div>
+							<h4 class="font-weight-bold mx-auto mb-0 text-center text-white" id="xbar"><span class="mr-4">3$</span> 1.99$</h4>
+							<div class="mx-auto text-center text-light">Par semaine pour trois mois</div>
 						</div>
 
-						<div class="">
-							
+						<div class="card-body">
+							<ul class="pt-5">
+								<li>Recevez en exclusité le magasine La RoyaleMAG chaque fin du mois</li>
+								<li>Accédez en illimité à <strong>l'intégralité des contenus</strong> sur tous vos écrans</li>
+								<li>Téléchargez <strong>votre journal en version numérique dès 7H</strong></li>
+								<li>Profitez d'une navigation <strong>sans publicité</strong></li>
+								<li>Bénéficiez d'un <strong>espace privilège</strong> réservé uniquement aux abonnés</li>
+								<li>Intégrer le club des lecteurs de la RoyaleNews</li>
+								<li>Diponibilité de toutes les archives de la RoyaleNews</li>
+							</ul>
+
+							<div class="text-center"><a href="" class="btn bg-warning font-weight-bold px-4 py-2" style="color: #000;">JE M'ABONNE</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="row">
+			<h1 class="text-center mx-auto mt-5">POURQUOI NOS CLIENTS <strong>SE SONT ABONNÉS ?</strong></h1>
+		</div>
+
+		<hr class="row col-4 offset-4 bg-dark mb-5">
 	</div>
 </div>
 
