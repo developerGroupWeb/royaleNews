@@ -111,7 +111,7 @@
                         @foreach($articlePriorityTreeMaxDataTreeOnePerLine as $detail)
                          <li class="media mt-4 mb-2 bg-white p-3 row">
                              <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
-                                 <img class="mr-3 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Generic plac eholder image">
+                                 <img class="mr-3 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" alt="Generic plac eholder image">
                              </a>
                              <div class="media-body">
                                  <a href="">
