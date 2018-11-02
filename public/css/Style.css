@@ -184,6 +184,22 @@ nav .sidenavLeft .abo-li a{
 		bottom: 0;
 	}
 
+/**---------------------------ABONNEMENT-----------------------------------**/
+#xbar span::before{
+	content: "";
+	height: 2px;
+	width: 55px;
+	display: inline-block;
+	border-bottom: 2px solid #fc3d3d;
+	margin-top: 5px;
+	position: absolute;
+	top: 76%;
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	transform: rotate(-13deg);
+	margin-left: -15px;
+}
+
 
 @media (max-width: 575.98px) {
 	
