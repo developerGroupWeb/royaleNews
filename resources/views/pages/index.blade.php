@@ -105,7 +105,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="row">
-                                    <img src="{{asset('images/E-ABO-100Num-T-300x250.png')}}" style="" class="img-fluid mx-auto">
+                                    <img src="{{asset('images/E-ABO-100Num-T-300x250.png')}}" class="img-fluid mx-auto" style="height: 250px;">
                                 </div>
                             </div>
                             <div class="col-md-8">
@@ -135,16 +135,20 @@
                      <ul class="list-unstyled col-12">
                         @foreach($articlePriorityTreeMaxDataTreeOnePerLine as $detail)
                          <li class="media mt-4 mb-2 bg-white p-3 row">
-                             <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                            <div class="col-md-3">
+                                <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                                  <img class="mr-3 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" alt="Generic plac eholder image">
-                             </a>
-                             <div class="media-body">
-                                 <a href="">
-                                     <h6 class="text-muted">{{$detail->rubric}}</h6>
-                                     <h4 class="mt-0 mb-1">{{$detail->title}}</h4>
-                                 </a>
-                                 <span class="text-muted">{{$times_already($detail->start_at)}}</span>
-                             </div>
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                 <div class="media-body">
+                                     <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                                         <h6 class="text-muted">{{$detail->rubric}}</h6>
+                                         <h4 class="mt-0 mb-1">{{$detail->title}}</h4>
+                                     </a>
+                                     <span class="text-muted">{{$times_already($detail->start_at)}}</span>
+                                 </div>
+                            </div>
                          </li>
                         @endforeach
                      </ul>
@@ -211,9 +215,29 @@
                      </div>
                  </div>
  
-                <div class="row">
-                     <div class="mt-2 mb-4" style="background-color: #333; ">
-                         <h1>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</h1>
+                <div class="row bg-light rounded  my-3 py-4" style="border: 1px solid #333;">
+                    <div class="col-12">
+                         <div class="row text-center">
+                            <h3 class="font-weight-bold mx-auto text-center" style="color: #000;">LA ROYALE <span class="title-label pt-0 px-2 pb-1 rounded">News</span></h3>
+                        </div>
+                        <div class="row">
+                             <i class="fa fa-envelope-open-o fa-3x mx-auto" aria-hidden="true"></i>
+                         </div>
+                         <div class="row">
+                             <h4 class="mx-auto text-center my-3">Ne rater rien de l'actualité en continue! Abonnez-vous à notre newsletters.</h4>
+                         </div>
+                         <div class="row">
+                             <form class="col-12" id="scrbNewsLetters" action="" method="post">
+                                <div class="row">
+                                    <div class="form-group col-md-8">
+                                         <input type="email" name="" class="form-control form-control-lg" id="scrbNewsLetters">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="submit" name="" id="scrbNewsLetters" value="s'inscrire" class="btn bg-success py-2 px-5 text-white font-weight-bold" style="font-size: 20px;">
+                                    </div>
+                                </div>
+                             </form>
+                         </div>
                      </div>
                 </div>
 

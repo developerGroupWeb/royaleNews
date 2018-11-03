@@ -17,7 +17,7 @@
       </div>
 
       <div class="card w-100 mb-4">
-        <h5 class="p-2 card-header">Newsletter Politique</h5>
+        <h5 class="p-2 card-header">Newsletters</h5>
         <form method="post" action="" id="newslettres" class="form-inline card-body">
           <div class="form-group">
             <input type="email" name="" class="form-control" placeholder="Insèrez votre email" id="newslettres">
