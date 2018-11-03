@@ -16,6 +16,14 @@ class rubricService
           return $article = Article::where(['rubric' => $rubrics]);
          //dd($article->exists());
     }
+    static function backArticle($pages, $id, $slug)
+    {
+           return $article = Article::where([
+               'rubric' => $pages,
+               'id' => $id,
+               'slug' => $slug,
+           ]);
+    }
     static function dataTheFirstTwo($rubrics)
     {
          return $firstTwo = Article::where('rubric', $rubrics)
@@ -45,5 +53,8 @@ class rubricService
                              ->take(1)
                              ->get();
         //dd($une);
+    }
+    static function show($id){
+        return $article = Article::where(['id' => $id])->get();
     }
 }

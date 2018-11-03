@@ -19,6 +19,7 @@ class RubricController extends Controller
         $firstTwo  = rubricService::dataTheFirstTwo($rubrics);
         $firstTree = rubricService::dataTheFirstTree($rubrics);
         $article   = rubricService::foundArticle($rubrics);
+        //dd($article->exists());
         return view('pages.rubrics', [
             'rubrics'   => $rubrics,
             'article'   => $article,
@@ -38,8 +39,13 @@ class RubricController extends Controller
      */
     public function show($pages, $date, $id, $slug)
     {
-        $article = Article::where('id', $id)->get();
-        return view('pages.show', ['pages' => $pages, 'article' => $article]);
+        $article = rubricService::show($id);
+        $backArticle = rubricService::backArticle($pages, $id, $slug);
+        if($backArticle->exists() == true){
+            return view('pages.show', ['pages' => $pages, 'article' => $article]);
+        }else
+            return redirect()->back();
+
     }
 
 }
