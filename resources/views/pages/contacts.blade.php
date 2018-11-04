@@ -17,7 +17,7 @@
 		      	  	</a>
 		      	</li>
 		      	<li class="nav-item">
-		      	  	<a href="{{route('members.singin')}}" class="nav-link btn px-4" style="color: #fff; background: #000;"><img src="{{asset('images/user.svg')}}" style="width: 30px; height: 
+		      	  	<a href="{{route('authentic', ['login' => 'singin'])}}" class="nav-link btn px-4" style="color: #fff; background: #000;"><img src="{{asset('images/user.svg')}}" style="width: 30px; height:
 		      	  	30px; margin-right: 10px;"><strong>Votre compte</strong>
 		      	  	</a>
 		      	</li>
