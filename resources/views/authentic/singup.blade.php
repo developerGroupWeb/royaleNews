@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-              <a href="{{route('members.singin')}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
+              <a href="{{route('authentic', ['login' => 'singin'])}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
               </a>
           </li>
       </ul>
@@ -34,7 +34,7 @@
       <div class="row">
         <h1 class="text-center mx-auto mb-5" style="color: #333;">Créez votre compte<br>en 1 minute.</h1>
         <h4 class="text-center mx-auto">Vous pourrez profiter des services gratuits de La Royale News sur tous les supports.</h4>
-        <h6 class="d-block d-sm-none text-center mx-auto"><strong>Déjà inscrit(e) ? <a href="{{route('members.singin')}}">Connectez-vous</a></strong></h6>
+        <h6 class="d-block d-sm-none text-center mx-auto"><strong>Déjà inscrit(e) ? <a href="{{route('authentic', ['login' => 'singin'])}}">Connectez-vous</a></strong></h6>
 
         <div class="col-12">
           <div class="row">
