@@ -16,17 +16,15 @@ Route::get('/', [
     'uses' => 'HomeController@index'
 ]);
 
+Route::group(['prefix' => 'auth'], function (){
+
+    Route::get('{login}', [
+        'as'   => 'authentic',
+        'uses' => "AuthenticController@authentic"
+    ]);
+});
+
 Route::group(['prefix' => 'members'], function(){
-
-    Route::get('singin', [
-        'as'   => 'members.singin',
-        'uses' => 'MemberController@sing_in'
-    ]);
-
-    Route::get('singup', [
-        'as'  => 'members.singup',
-        'uses' => 'MemberController@sing_up'
-    ]);
 
     Route::get('abonnement', [
         'as'   => 'members.abonnement',

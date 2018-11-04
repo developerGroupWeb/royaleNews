@@ -11,7 +11,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a href="{{route('members.singin')}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
+                <a href="{{route('authentic', ['login' => 'singin'])}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
                 </a>
             </li>
         </ul>
