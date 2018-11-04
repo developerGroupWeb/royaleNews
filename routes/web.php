@@ -16,17 +16,26 @@ Route::get('/', [
     'uses' => 'HomeController@index'
 ]);
 
+Route::get('{rubrics}', [
+    'as'   => 'rubric.all',
+    'uses' => 'RubricController@all'
+]);
+
+Route::get('{rubrics}/{start_at}/{id}-{slug}', [
+    'as'   => 'rubric.show',
+    'uses' =>'RubricController@show'
+])->where(['id' => '[0-9]+', 'slug' => '[a-zA-Z0-9- ]+', 'start_at' => '[0-9-]+']);
+
+
+Route::group(['prefix' => 'auth'], function (){
+
+    Route::get('{login}', [
+        'as'   => 'authentic',
+        'uses' => "AuthenticController@authentic"
+    ]);
+});
+
 Route::group(['prefix' => 'members'], function(){
-
-    Route::get('singin', [
-        'as'   => 'members.singin',
-        'uses' => 'MemberController@sing_in'
-    ]);
-
-    Route::get('singup', [
-        'as'  => 'members.singup',
-        'uses' => 'MemberController@sing_up'
-    ]);
 
     Route::get('abonnement', [
         'as'   => 'members.abonnement',
@@ -50,15 +59,7 @@ Route::group(['prefix' => 'members'], function(){
 });
 
 
-Route::get('{rubrics}', [
-    'as'   => 'rubric.all',
-    'uses' => 'RubricController@all'
-]);
 
-Route::get('{rubrics}/{start_at}/{id}-{slug}', [
-    'as'   => 'rubric.show',
-    'uses' =>'RubricController@show'
-])->where(['id' => '[0-9]+', 'slug' => '[a-zA-Z0-9- ]+', 'start_at' => '[0-9-]+']);
 
 
 

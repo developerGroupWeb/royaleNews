@@ -10,7 +10,7 @@
             </a>
         </div>
         <div>
-          <a href="{{route('members.singin')}}">
+          <a href="{{route('authentic', ['login' => 'singin'])}}">
             <span class="fa fa-user-circle-o" style="color: #111;"></span>
           </a>
         </div>
@@ -69,7 +69,7 @@
               <a class="nav-link rounded font-weight-bold bg-warning py-2 text-center" style="color: #000;" href="{{route('members.abonnement')}}" target="_blank">ABONNEZ-VOUS<br/><span class="text-white">1 mois gratuit offert</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link font-weight-bold text-dark py-3" href="{{route('members.singin')}}"><img src="{{asset('images/user.svg')}}" style="width: 30px; height: 
+              <a class="nav-link font-weight-bold text-dark py-3" href="{{route('authentic', ['login' => 'singin'])}}"><img src="{{asset('images/user.svg')}}" style="width: 30px; height:
                 30px; margin-right: 10px;"></span> Connexion</a>
             </li>
             
