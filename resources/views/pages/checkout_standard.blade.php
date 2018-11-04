@@ -14,7 +14,7 @@
 		    <div class="collapse navbar-collapse">
 			    <ul class="navbar-nav ml-auto">
 			      	<li class="nav-item">
-			      	  	<a href="{{route('members.singin')}}" class="nav-link btn px-4" style="background: #000; color: #fff;"><img src="{{asset('images/user.svg')}}" style="width: 30px; height: 
+			      	  	<a href="{{route('authentic', ['login' => 'singin'])}}" class="nav-link btn px-4" style="background: #000; color: #fff;"><img src="{{asset('images/user.svg')}}" style="width: 30px; height:
 		      	  	30px; margin-right: 10px;"> <strong>Espace abonné</strong>
 			      	  	</a>
 			      	</li>

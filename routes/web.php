@@ -42,11 +42,6 @@ Route::group(['prefix' => 'members'], function(){
         'uses' => 'MemberController@abonnement'
     ]);
 
-    Route::get('contacts', [
-        'as'   => 'members.contacts',
-        'uses' => 'MemberController@contacts'
-    ]);
-
     Route::get('checkout_standard', [
         'as'   => 'members.checkout_standard',
         'uses' => 'MemberController@checkout_standard'
@@ -56,6 +51,13 @@ Route::group(['prefix' => 'members'], function(){
         'as'   => 'members.checkout_premium',
         'uses' => 'MemberController@checkout_premium'
     ]);
+
+    Route::get('contacts', [
+        'as'   => 'members.contacts',
+        'uses' => 'MemberController@contacts'
+    ]);
+
+
 });
 
 
