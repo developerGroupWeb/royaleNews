@@ -15,6 +15,7 @@ class HomeController extends Controller
         $articlePriorityTreeMaxDataTreeOnePerLine  = homeService::dataForIntervalFollowingPosition('2', '0', '3' );
         $articlePriorityTreeMaxDataSixTreePerLine = homeService::dataForIntervalFollowingPosition('2', '3', '6' );
         //dd($suites);
+        //dd($_SERVER['HTTP_USER_AGENT']);
         return view('pages.index', ['unes' => $unes,
                                           'suites' => $suites,
                                           'articlePriorityTwo' => $articlePriorityTwo,

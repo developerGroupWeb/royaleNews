@@ -37,6 +37,16 @@ Route::group(['prefix' => 'members'], function(){
         'as'   => 'members.contacts',
         'uses' => 'MemberController@contacts'
     ]);
+
+    Route::get('checkout_standard', [
+        'as'   => 'members.checkout_standard',
+        'uses' => 'MemberController@checkout_standard'
+    ]);
+
+    Route::get('checkout_premium', [
+        'as'   => 'members.checkout_premium',
+        'uses' => 'MemberController@checkout_premium'
+    ]);
 });
 
 

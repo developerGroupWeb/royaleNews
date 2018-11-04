@@ -3,19 +3,19 @@
   @section('content')
 
 <div class="">
-  <nav class="navbar navbar-expand-sm fixed-top px-5 shadow" style="background: #000000;">>
+  <nav class="navbar navbar-expand-sm fixed-top pl-0 pr-4 shadow" style="background: #000000;">>
     <a class="navbar-brand" href="{{route('root_path')}}" style="color: #fff;">
-      <h3 class="font-weight-bold">LA ROYALE <span class="title-label pt-0 px-2 pb-1 rounded">News</span>
+      <h3 class="font-weight-bold m-0">LA ROYALE <span class="title-label pt-0 px-2 pb-1 rounded">News</span>
       </h3>
-      </a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a href="{{route('members.singin')}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
-                </a>
-            </li>
-        </ul>
-      </div>
+    </a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a href="{{route('members.singin')}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
+              </a>
+          </li>
+      </ul>
+    </div>
   </nav>
 </div>
 
@@ -24,32 +24,34 @@
     <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12 offset-0 singin-content bg-white py-4 px-5 mb-5 shadow" style="margin-top: 100px; border-radius: 20px;">
       <div class="row">
         <h1 class="text-center mx-auto mb-5" style="color: #333;">Créez votre compte<br>en 1 minute.</h1>
-        <h4 class="text-center mx-auto">Vous pourrez profiter des services gratuits de La Royale Presse sur tous les supports.</h4>
-        <h6 class="d-block d-sm-none text-center mx-auto"><strong>Déjà inscrit(e) ? <a href="Sing-in.html">Connectez-vous</a></strong></h6>
+        <h4 class="text-center mx-auto">Vous pourrez profiter des services gratuits de La Royale News sur tous les supports.</h4>
+        <h6 class="d-block d-sm-none text-center mx-auto"><strong>Déjà inscrit(e) ? <a href="{{route('members.singin')}}">Connectez-vous</a></strong></h6>
 
         <div class="col-12">
           <div class="row">
             <div class="col-12">
-              <p class="d-block d-sm-none text-center font-weight-bold">Se connecter avec</p>
+              <hr class="row">
+              <p class="d-block d-sm-none text-center font-weight-bold">Continuer avec</p>
             </div>
+
             <div class="col">
               <div class="row">
-                    <a href="#" class="btn" style="background: #3B5998; color: #fff;">
-                      <span class="d-none d-sm-inline-block font-weight-bold">Se connecter avec</span> 
-                      <button class="btn" style="background: #fff; color: #3B5998;"><i class="fa fa-facebook" aria-hidden="true"></i></button>
-                    </a>
-                  </div>
-                </div>
-
-                <div class="col">
-                  <div class="row">
-                  <a href="#" class="btn ml-auto" style="background: #d34836; color: #fff;">
-                    <span class="d-none d-sm-inline-block font-weight-bold">Se connecter avec</span> 
-                    <button class="btn" style="background: #fff; color: #d34836;"><i class="fa fa-google" aria-hidden="true"></i></button>
-                  </a>
-                </div>
+                <a href="#" class="btn" style="background: #3B5998; color: #fff;">
+                  <span class="d-none d-sm-inline-block font-weight-bold">Continuer avec</span> 
+                  <button class="btn" style="background: #fff; color: #3B5998;"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                </a>
               </div>
             </div>
+
+            <div class="col">
+              <div class="row">
+                <a href="#" class="btn ml-auto" style="background: #d34836; color: #fff;">
+                  <span class="d-none d-sm-inline-block font-weight-bold">Continuer avec</span> 
+                  <button class="btn" style="background: #fff; color: #d34836;"><i class="fa fa-google" aria-hidden="true"></i></button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
           <div class="col-12 text-center">
@@ -63,13 +65,14 @@
             <form method="post" action="" id="singup">
                 {{csrf_field()}}
               <div class="radio">
-                    <span style="font-weight: bold; margin-right: 20px;">Civilité: </span>
+                    <span style="margin-right: 20px;">Civilité: </span>
                     <label class="radio-inline">
                       <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option1"> Madame
                     </label>
                     <label class="radio-inline">
                       <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option2"> Monsieur
                     </label>
+                    <small style="margin-left: 20px; color: red;">(Civilité obligatoire)</small>
               </div>
 
                   <div class="row">

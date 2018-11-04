@@ -72,6 +72,17 @@
               <a class="nav-link font-weight-bold text-dark py-3" href="{{route('members.singin')}}"><img src="{{asset('images/user.svg')}}" style="width: 30px; height: 
                 30px; margin-right: 10px;"></span> Connexion</a>
             </li>
+            
+
+            <!--<li class="dropdown nav-item">
+              <a class="dropdown-toggle nav-link font-weight-bold text-dark py-3" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mr ou Mme Name
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="z-index: 10000;">
+                <a class="dropdown-item" href="">Espace abonné</a>
+                <a class="dropdown-item" href="">Se déconnecter</a>
+              </div>
+            </li>-->
           </ul>
           
         </div>
@@ -109,7 +120,7 @@
                     Plus
                   </a>
 
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'sport'])}}"><strong>Sport</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'éducation'])}}"><strong>Éducation</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'tech-innovation'])}}"><strong>Tech-innovation</strong></a>
@@ -165,8 +176,8 @@
             <div class="col-md-3">
               <div class="row">
                 <ul class="nav flex-column w-100 font-weight-bold" style="font-size: 20px; text-transform: uppercase; ">
-                  <li class="nav-item bg-dark pl-3">
-                    <a class="nav-link" href="Opinion.php">Opinion</a>
+                  <li class="nav-itembg-dark pl-3">
+                    <a class="nav-link avtive" href="Opinion.php">Opinion</a>
                   </li>
                   <li class="nav-item bg-dark my-2 pl-3">
                     <a class="nav-link" href="Enquetes.php">enquêtes</a>
@@ -189,7 +200,7 @@
               <div class="row">
                 <div class="card-group menuFullScreen-content">
                   <div class="card bg-dark text-white item1">
-                    <img class="card-img" src="bookstore/images/gvbuyb.jpg" alt="Card image">
+                    <img class="card-img" src="{{asset('images/images25525415.jpg')}}" alt="Card image">
                     <div class="card-img-overlay item1-overlay">
                       <h5 class="card-title">La Royale Presse: Le premier quotidien 100% electronique au Benin</h5>
                       
@@ -198,7 +209,7 @@
                   </div>
 
                   <div class="card bg-dark text-white item2">
-                    <img class="card-img" src="bookstore/images/gvbuyb.jpg" alt="Card image">
+                    <img class="card-img" src="{{asset('images/images25525415.jpg')}}" alt="Card image">
                     <div class="card-img-overlay item2-overlay">
                       <h5 class="card-title">Card title</h5>
                       
@@ -207,7 +218,7 @@
                   </div>
 
                   <div class="card bg-dark text-white item3">
-                    <img class="card-img" src="bookstore/images/880x495_551979.jpg" alt="Card image">
+                    <img class="card-img" src="{{asset('images/images25525415.jpg')}}" alt="Card image">
                     <div class="card-img-overlay item3-overlay">
                       <h5 class="card-title">Card title</h5>
                       

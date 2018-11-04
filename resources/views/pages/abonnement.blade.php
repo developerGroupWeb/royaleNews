@@ -119,7 +119,7 @@
 								<li>Diponibilité de toutes les archives de la RoyaleNews</li>
 							</ul>
 
-							<div class="text-center"><a href="" class="btn bg-warning font-weight-bold px-4 py-2" style="color: #000;">JE M'ABONNE</a></div>
+							<div class="text-center"><a href="{{route('members.checkout_standard')}}" class="btn bg-warning font-weight-bold px-4 py-2" style="color: #000;">JE M'ABONNE</a></div>
 						</div>
 					</div>
 				</div>
