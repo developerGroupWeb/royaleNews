@@ -67,6 +67,26 @@
 							</div>
 						</div>
 					</div>
+
+					
+					<form action="" method="" class="row mt-5">
+						<div class="col-md-10 offset-md-1">
+							<div class="row">
+								<div class="col-lg-10">
+									<div class="form-group">
+						                <label for="email" class="font-weight-bold">E-mail <span class="text-danger font-weight-bold">*</span></label>
+						                <input type="email" class="form-control " id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
+						            </div>
+								</div>
+
+								<div>
+									<div class="form-group">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 
 				<div class="col-md-5 col-lg-4 bg-white shadow p-4">

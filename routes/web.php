@@ -35,7 +35,7 @@ Route::group(['prefix' => 'auth'], function (){
     ]);
 });
 
-Route::group(['domain' => '127.0.0.1/abonnement.laRoyaleNews/public'], function (){
+Route::group([], function (){
 
     Route::group(['prefix' => 'members'], function(){
 
