@@ -42,14 +42,14 @@ Route::group(['prefix' => 'members'], function(){
         'uses' => 'MemberController@abonnement'
     ]);
 
-    Route::get('checkout_standard', [
-        'as'   => 'members.checkout_standard',
-        'uses' => 'MemberController@checkout_standard'
+    Route::get('checkoutStandard', [
+        'as'   => 'members.checkoutStandard',
+        'uses' => 'MemberController@checkoutStandard'
     ]);
 
-    Route::get('checkout_premium', [
-        'as'   => 'members.checkout_premium',
-        'uses' => 'MemberController@checkout_premium'
+    Route::get('checkoutPremium', [
+        'as'   => 'members.checkoutPremium',
+        'uses' => 'MemberController@checkoutPremium'
     ]);
 
     Route::get('contacts', [

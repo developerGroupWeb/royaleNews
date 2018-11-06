@@ -15,11 +15,11 @@ class MemberController extends Controller
         return view('pages.contacts');
     }
 
-    function checkout_standard(){
-        return view('pages.checkout_standard');
+    function checkoutStandard(){
+        return view('pages.checkoutStandard');
     }
 
-    function checkout_premium(){
-        return view('pages.checkout_premium');
+    function checkoutPremium(){
+        return view('pages.checkoutPremium');
     }
 }
