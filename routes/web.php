@@ -35,28 +35,32 @@ Route::group(['prefix' => 'auth'], function (){
     ]);
 });
 
-Route::group(['prefix' => 'members'], function(){
+Route::group(['domain' => '127.0.0.1/abonnement.laRoyaleNews/public'], function (){
 
-    Route::get('abonnement', [
-        'as'   => 'members.abonnement',
-        'uses' => 'MemberController@abonnement'
-    ]);
+    Route::group(['prefix' => 'members'], function(){
 
-    Route::get('checkout_standard', [
-        'as'   => 'members.checkout_standard',
-        'uses' => 'MemberController@checkout_standard'
-    ]);
+        Route::get('abonnement', [
+            'as'   => 'members.abonnement',
+            'uses' => 'MemberController@abonnement'
+        ]);
 
-    Route::get('checkout_premium', [
-        'as'   => 'members.checkout_premium',
-        'uses' => 'MemberController@checkout_premium'
-    ]);
+        Route::get('checkout_standard', [
+            'as'   => 'members.checkout_standard',
+            'uses' => 'MemberController@checkout_standard'
+        ]);
 
-    Route::get('contacts', [
-        'as'   => 'members.contacts',
-        'uses' => 'MemberController@contacts'
-    ]);
+        Route::get('checkout_premium', [
+            'as'   => 'members.checkout_premium',
+            'uses' => 'MemberController@checkout_premium'
+        ]);
 
+        Route::get('contacts', [
+            'as'   => 'members.contacts',
+            'uses' => 'MemberController@contacts'
+        ]);
+
+
+    });
 
 });
 
