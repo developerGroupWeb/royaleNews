@@ -153,36 +153,30 @@
 
 							<!--confirmation page-->
 							<div class="row">
-								<h3 class="mt-5 mb-3">Choisissez votre mode de paiement</h3>
+								<h3 class="mt-5 mb-4">Choisissez votre mode de paiement</h3>
 							</div>
 							<div class="row">
 								<form action="" method="">
-									<div class="border px-2 py-1">
-										<div class="form-check">
-										  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-										  <label class="form-check-label text-uppercase" for="exampleRadios1">
-										    <strong>Carte de crédit</strong> 
+										<div class="custom-control custom-radio mb-4">
+										  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="" checked>
+										  <label class="custom-control-label" for="customRadio1">
+										  	<strong>Carte de crédit</strong>
 										  </label>
 										</div>
-									</div>
 
-									<div class="border p-2">
-										<div class="form-check">
-										  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-										  <label class="form-check-label text-uppercase" for="exampleRadios1">
-										    <strong>PayPal</strong> 
+										<div class="custom-control custom-radio mb-4">
+										  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="">
+										  <label class="custom-control-label" for="customRadio2">
+										  	<strong>PayPal</strong>
 										  </label>
 										</div>
-									</div>
 
-									<div class="border p-2">
-										<div class="form-check">
-										  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-										  <label class="form-check-label text-uppercase" for="exampleRadios1">
-										    <strong>Mode de paiement local</strong> 
+										<div class="custom-control custom-radio mb-4">
+										  <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="">
+										  <label class="custom-control-label" for="customRadio3">
+										  	<strong>Mode de paiement local</strong>
 										  </label>
 										</div>
-									</div>
 								</form>
 							</div>
 						</div>
