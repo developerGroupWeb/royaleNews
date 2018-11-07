@@ -68,25 +68,125 @@
 						</div>
 					</div>
 
-					
-					<form action="" method="" class="row mt-5">
+					<div class="row mt-5">
 						<div class="col-md-10 offset-md-1">
 							<div class="row">
-								<div class="col-lg-10">
-									<div class="form-group">
-						                <label for="email" class="font-weight-bold">E-mail <span class="text-danger font-weight-bold">*</span></label>
-						                <input type="email" class="form-control " id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
-						            </div>
-								</div>
+								<p class="mx-auto text-center">Vous avez déjà un sur laRoyaleNews ? <a href="">Connectez-vous</a></p>
+								<h3 class="mx-auto text-center">Sinon veuillez <strong>créer un compte</strong></h3>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row mt-5">
+						<div class="col-md-10 offset-md-1">
+							<div class="row">
+								<form method="post" action="" id="singup">
+					                {{csrf_field()}}
+					              <div class="radio">
+					                    <span style="margin-right: 20px;">Civilité: </span>
+					                    <label class="radio-inline">
+					                      <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option1"> Madame
+					                    </label>
+					                    <label class="radio-inline">
+					                      <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option2"> Monsieur
+					                    </label>
+					                    <small style="margin-left: 20px; color: red;">(Civilité obligatoire)</small>
+					              </div>
 
-								<div>
-									<div class="form-group">
-										
+					                  <div class="row">
+					                    <div class="form-group col-sm-6">
+					                      <label for="firstname">Prénom</label>
+					                      <input type="text" class="form-control" id="firstname" title="first name" placeholder="Votre prénom"><span class="error"></span>
+					                    </div>
+
+					                    <div class="form-group col-sm-6">
+					                      <label for="surname">Nom</label>
+					                      <input type="text" class="form-control" id="surname" title="surname" placeholder="Votre nom"><span class="error"></span>
+					                    </div>
+					                  </div>
+					              <div class="form-group">
+					                <label for="email">E-mail</label>
+					                <input type="email" class="form-control " id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
+					              </div>
+
+					              <div class="form-group">
+					                <div class="">
+					                  <label class="pull-left" for="password">Créer un mot de passe</label>
+					                  <span class="pull-right" style="font-size: 15px; color: #1abc9c;"><i class="fa fa-eye" id="fa-eye" aria-hidden="true">Afficher</i><i class="fa fa-eye-slash" id="fa-eye-slash" aria-hidden="true" style="display: none;">Cacher</i></span>
+					              </div>
+					                <input type="password" class="form-control" id="password" title="password" placeholder="Au moins 8 caratères, 1 majuscule, 1 chiffre"><span class="error"></span>
+					              </div>
+
+					              <div class="form-group">
+					                          <label class="pull-left" for="password">Confirmer mot de passe</label>
+					                          <input type="password" class="form-control" id="passwordConfirm" title="password confirm" placeholder="Confirmer mot de passe"><span class="error"></span>
+					                  </div>
+
+					                  <div class="checkbox">
+					                    <label>
+					                      <input type="checkbox"> Oui, je souhaite recevoir les informations de laroyalepresse.com
+					                    </label>
+					                  </div>
+					                  <div class="checkbox">
+					                    <label>
+					                      <input type="checkbox"> Oui, je souhaite recevoir les informations des partenaires de laroyalepresse.com
+					                    </label>
+					                  </div>
+					                  <div class="checkbox">
+					                    <label>
+					                      <input type="checkbox" required="required" checked="">J'accepte les <a href="">conditions générales de vente</a> et <a href="">conditions générales d'utilisation</a>
+					                    </label>
+					                  </div>
+
+
+					              <button type="submit"  id="singup" class="btn col-sm-8 offset-sm-2 col-8 offset-2 singbg-btn my-4" style="padding: 7px;"><h4>Je m'inscris</h4></button>
+					            </form>
+							</div>
+
+							<div class="row">
+								<div class="col-md-5 ml-auto mt-4">
+									<div class="row">
+										<a href="" class="btn w-100" style="background: #ffa31a;"><h5 class="text-white font-weight-bold">Continuer</h5></a>
 									</div>
 								</div>
 							</div>
+
+							<!--confirmation page-->
+							<div class="row">
+								<h3 class="mt-5 mb-3">Choisissez votre mode de paiement</h3>
+							</div>
+							<div class="row">
+								<form action="" method="">
+									<div class="border px-2 py-1">
+										<div class="form-check">
+										  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+										  <label class="form-check-label text-uppercase" for="exampleRadios1">
+										    <strong>Carte de crédit</strong> 
+										  </label>
+										</div>
+									</div>
+
+									<div class="border p-2">
+										<div class="form-check">
+										  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+										  <label class="form-check-label text-uppercase" for="exampleRadios1">
+										    <strong>PayPal</strong> 
+										  </label>
+										</div>
+									</div>
+
+									<div class="border p-2">
+										<div class="form-check">
+										  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+										  <label class="form-check-label text-uppercase" for="exampleRadios1">
+										    <strong>Mode de paiement local</strong> 
+										  </label>
+										</div>
+									</div>
+								</form>
+							</div>
 						</div>
-					</form>
+					</div>
 				</div>
 
 				<div class="col-md-5 col-lg-4 bg-white shadow p-4">
@@ -172,3 +272,6 @@
 		</div>
 	</div>
 </div>
+
+<script src="{{asset('js/singup.js')}}"></script>
+@stop

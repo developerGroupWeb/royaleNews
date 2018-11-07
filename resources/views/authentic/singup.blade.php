@@ -121,7 +121,7 @@
                   </div>
 
 
-              <button type="submit"  id="singup" class="btn col-sm-8 offset-sm-2 col-8 offset-2 singbg-btn" style="padding: 12px; margin-bottom: 40px;"><h4>Je m'inscris</h4></button>
+              <button type="submit"  id="singup" class="btn col-sm-8 offset-sm-2 col-8 offset-2 singbg-btn my-4" style="padding: 7px;"><h4>Je m'inscris</h4></button>
             </form>
         </div>
       </div>
