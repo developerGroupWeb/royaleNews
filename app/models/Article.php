@@ -7,7 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     public $timestamps = false;
+
     protected $casts      =[
-        'start_at' => 'datetime'
+        'created_at' => 'datetime',
+        'updated_at' => 'datetime'
     ];
 }

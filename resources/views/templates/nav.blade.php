@@ -2,7 +2,12 @@
 <nav class="d-md-none">
     <div class="header-mob navbar fixed-top shadow" style="background: #fff;">
         <div>
+<<<<<<< HEAD
             <span class="fa fa-bars" style="color: #111;"></span>
+=======
+            <span class="fa fa-bars" style="color: #111;" onclick="openNavLeft()"></span>
+            <span class="fa fa-times" style="color: #111;"></span>
+>>>>>>> 5e507cf661a2221458d41006e3d6230b0862ba58
         </div>
         <div class="title-mo">
             <a href="{{route('root_path')}}">
@@ -244,3 +249,4 @@
         </ul>
     </div>
 </nav>
+<script src="{{asset('js/navmobile.js')}}"></script>
