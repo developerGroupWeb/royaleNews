@@ -2,7 +2,7 @@
 <nav class="d-md-none">
     <div class="header-mob navbar fixed-top shadow" style="background: #fff;">
         <div>
-            <span class="fa fa-bars" style="color: #111;" onclick="openNavLeft()"></span>
+            <span class="fa fa-bars" style="color: #111;"></span>
         </div>
         <div class="title-mo">
             <a href="{{route('root_path')}}">
@@ -18,7 +18,7 @@
 
     <div id="mySidenavLeft" class="sidenavLeft">
         <ul class="list-unstyled">
-            <li class="close"><a href="javascript:void(0)" class="closebtn" onclick="closeNavLeft()">&times;</a></li>
+            <li class="close"><a href="javascript:void(0)" class="closebtn" >&times;</a></li>
             <li class="nav-item">
               <a class="nav-link rounded font-weight-bold bg-warning py-2 text-center" style="color: #000;" href="{{route('members.abonnement')}}">ABONNEZ-VOUS<br/><span class="text-white">1 mois gratuit offert</span></a>
             </li>

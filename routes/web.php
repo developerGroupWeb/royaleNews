@@ -39,15 +39,15 @@ Route::group([], function (){
 
     Route::group(['prefix' => 'members'], function(){
 
-    Route::get('checkoutStandard', [
-        'as'   => 'members.checkoutStandard',
-        'uses' => 'MemberController@checkoutStandard'
-    ]);
+        Route::get('checkoutStandard', [
+            'as'   => 'members.checkoutStandard',
+            'uses' => 'MemberController@checkoutStandard'
+        ]);
 
-    Route::get('checkoutPremium', [
-        'as'   => 'members.checkoutPremium',
-        'uses' => 'MemberController@checkoutPremium'
-    ]);
+        Route::get('checkoutPremium', [
+            'as'   => 'members.checkoutPremium',
+            'uses' => 'MemberController@checkoutPremium'
+        ]);
 
         Route::get('abonnement', [
             'as'   => 'members.abonnement',

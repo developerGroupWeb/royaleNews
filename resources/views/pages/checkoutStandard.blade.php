@@ -25,7 +25,7 @@
 
 	<div class="bg-light">
 		<div class="container">
-			<div class="row pt-5">
+			<div class="row py-5">
 				<div class="col-md-7 col-lg-8">
 					<div class="row">
 						<div class="col-md-10 offset-md-1">
@@ -265,6 +265,71 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="">
+		<div class="col-12 bg-white py-5">
+			<div class="row">
+				<h3 class="mx-auto text-dark">Pour plus de renseignements</h3>
+			</div>
+			<div class="row">
+				<h2 class="mx-auto my-3"><a href="{{route('members.contacts')}}" class="text-center">Contactez-nous !</a></h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg-info py-5 text-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 mb-4">
+					<div class="row">
+						<div class="mx-auto"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></div>
+					</div>
+					<div class="row">
+				        <div class="mx-auto">
+				          <h4 class="text-center">Une question ?<span class="d-none d-lg-block">contact@laroyalenews.com</span> <span class="d-block d-lg-none">Contacter nous!</span></h4>
+				        </div>
+					</div>
+				</div>
+
+				<div class="col-md-3 mb-4">
+					<div class="row">
+						<div class="mx-auto"><i class="fa fa-lock fa-2x" aria-hidden="true"></i></div>
+					</div>
+					<div class="row">
+				        <div class="text-center mx-auto">
+				          <h4>Paiement <br> Sécurisé</h4>
+				        </div>
+					</div>
+				</div>
+
+				<div class="col-md-3 mb-4">
+					<div class="row">
+						<div class="mx-auto"><i class="fa fa-gift fa-2x" aria-hidden="true"></i></div>
+					</div>
+					<div class="row">
+				        <div class="text-center mx-auto">
+				          <h4>Offre <br>exceptionnelle</h4>
+				        </div>
+					</div>
+				</div>
+
+				<div class="col-md-3 mb-4">
+					<div class="row">
+						<div class="mx-auto"><i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true"></i></div>
+					</div>
+					<div class="row">
+				        <div class="text-center mx-auto">
+				          <h4>Sans <br>engagement</h4>
+				        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="" style="padding: 10px; background: #074e68;;">
+	    <h5 class="text-center mx-auto" style="color: #000;"><strong>© La Royale News 2018</strong></h5>
+	</footer>
 </div>
 
 <script src="{{asset('js/singup.js')}}"></script>
