@@ -28,7 +28,7 @@ class rubricService
     {
          return $firstTwo = Article::where('rubric', $rubrics)
                                   ->where('position', '!=', 0)
-                                  ->orderBy('start_at')
+                                  ->orderBy('created_at')
                                   ->skip(0)
                                   ->take(2)
                                   ->get();
@@ -38,7 +38,7 @@ class rubricService
     {
         return $firstTree = Article::where('rubric', $rubrics)
                                   ->where('position', '!=', 0)
-                                  ->orderBy('start_at')
+                                  ->orderBy('created_at')
                                   ->skip(2)
                                   ->take(12)
                                   ->get();
@@ -48,7 +48,7 @@ class rubricService
     {
         return $une = Article::where('rubric', $rubrics)
                              ->where('position', 0)
-                             ->orderBy('start_at')
+                             ->orderBy('created_at')
                              ->skip(0)
                              ->take(1)
                              ->get();

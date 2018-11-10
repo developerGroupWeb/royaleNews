@@ -13,7 +13,7 @@ class homeService
 {
     static function dataForIntervalFollowingPosition($position, $skip, $take){
         return Article::where('position', $position)
-                        ->orderBy('start_at')
+                        ->orderBy('created_at')
                         ->skip($skip)
                         ->take($take)
                         ->get();

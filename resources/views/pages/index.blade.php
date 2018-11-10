@@ -1,7 +1,9 @@
  @extends('templates.template')
  
  @section('content')
+
      @include('templates.nav')
+
  <div id="main">
     <div class="container-fluid">
         <div class="row">
@@ -28,7 +30,7 @@
                          <div class="carousel-inner">
                              <div class="carousel-item active">
                                  @foreach($unes as $une)
-                                 <a href="{{route('rubric.show', [strtolower($une->rubric), $formatData($une->start_at), $une->id, $une->slug])}}">
+                                 <a href="{{route('rubric.show', [strtolower($une->rubric), $formatData($une->created_at), $une->id, $une->slug])}}">
                                      <span class="badge badge-primary">{{$une->rubric}}</span>
                                      <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$une->pictures}}" alt="First slide">
                                      <div class="carousel-caption carousel-caption-bg">
@@ -40,7 +42,7 @@
                              @foreach($suites as $suite)
                              <div class="carousel-item">
  
-                                 <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->start_at), $suite->id, $suite->slug])}}">
+                                 <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
                                      <span class="badge badge-primary">{{$suite->rubric}}</span>
                                      <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
                                      <div class="carousel-caption carousel-caption-bg">
@@ -82,7 +84,7 @@
                     <div class="card-columns">
                         @foreach($articlePriorityTwo as $detail)
                          <div class="card">
-                             <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                             <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">
                                  <img class="card-img-top" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}"/>
                                  <div class="card-body">
                                      <span class="badge-small badge-primary font-weight-bold rounded px-1">{{ucfirst($detail->rubric)}}</span>
@@ -91,7 +93,7 @@
                                  </div>
                              </a>
                              <div class="card-footer">
-                                 <small class="text-muted">{{$times_already($detail->start_at)}}</small>
+                                 <small class="text-muted">{{$times_already($detail->created_at)}}</small>
                              </div>
                          </div>
                         @endforeach
@@ -136,17 +138,17 @@
                         @foreach($articlePriorityTreeMaxDataTreeOnePerLine as $detail)
                          <li class="media mt-4 mb-2 bg-white p-3 row">
                             <div class="col-md-3">
-                                <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                                <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">
                                  <img class="mr-3 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" alt="Generic plac eholder image">
                                 </a>
                             </div>
                             <div class="col-md-9">
                                  <div class="media-body">
-                                     <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                                     <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">
                                          <h6 class="text-muted">{{$detail->rubric}}</h6>
                                          <h4 class="mt-0 mb-1">{{$detail->title}}</h4>
                                      </a>
-                                     <span class="text-muted">{{$times_already($detail->start_at)}}</span>
+                                     <span class="text-muted">{{$times_already($detail->created_at)}}</span>
                                  </div>
                             </div>
                          </li>
@@ -159,11 +161,11 @@
                          @foreach($articlePriorityTreeMaxDataSixTreePerLine as $detail)
                          <div class="card">
                              <div class="card-body">
-                                 <h5 class="card-title"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h5>
+                                 <h5 class="card-title"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h5>
                                  <small class="text-muted">{{$detail->rubric}}</small>
                                  <p class="card-text">{{$detail->content}}</p>
                              </div>
-                             <div class="card-footer"><small class="text-muted">{{$times_already($detail->start_at)}}</small></div>
+                             <div class="card-footer"><small class="text-muted">{{$times_already($detail->created_at)}}</small></div>
                          </div>
                          @endforeach
                      </div>

@@ -1,7 +1,9 @@
  @extends('templates.template')
 
 @section('content')
+
     @include('templates.nav')
+
     <div class="rubric-content">
         <div class="container-fluid">
             <div class="row">
@@ -20,13 +22,13 @@
                     <div class="row">
                         @foreach($une as $detail)
                             <div class="card mb-4 bg-white">
-                                <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                                <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">
                                     <h2 class="card-body">{{$detail->title}}</h2>
                                     <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" class="w-100" alt="Image">
                                     <p class="p-4">{{$detail->content}}</p>
                                 </a>
                                 <div class="card-footer">
-                                    <small class="text-muted">{{$times_already($detail->start_at)}}</small>
+                                    <small class="text-muted">{{$times_already($detail->created_at)}}</small>
                                 </div>
                             </div>
                         @endforeach
@@ -36,12 +38,12 @@
                         <div class="card-deck">
                             @foreach($firstTwo as $detail)
                                 <div class="card mb-3 bg-white">
-                                    <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
+                                    <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">
                                         <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" class="w-100" alt="Image">
                                     </a>
-                                    <h4 class="card-body"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h4>
+                                    <h4 class="card-body"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h4>
                                     <div class="card-footer">
-                                        <small class="text-muted">{{$times_already($detail->start_at)}}</small>
+                                        <small class="text-muted">{{$times_already($detail->created_at)}}</small>
                                     </div>
                                 </div>
                             @endforeach
@@ -55,9 +57,9 @@
                                     <a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">
                                         <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" class="w-100" style="height: 150px;" alt="Image">
                                     </a>
-                                    <h4 class="card-body" style="font-size: 18px;"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->start_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h4>
+                                    <h4 class="card-body" style="font-size: 18px;"><a href="{{route('rubric.show', [strtolower($detail->rubric), $formatData($detail->created_at), $detail->id, $detail->slug])}}">{{$detail->title}}</a></h4>
                                     <div class="card-footer">
-                                        <small class="text-muted">{{$times_already($detail->start_at)}}</small>
+                                        <small class="text-muted">{{$times_already($detail->created_at)}}</small>
                                     </div>
                                 </div>
                             @endforeach

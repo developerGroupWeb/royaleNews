@@ -11,10 +11,19 @@ namespace App\Helpers;
 
 class Articlehelper
 {
+    /**
+     * @param $data
+     * @return mixed
+     */
     static function formatData($data)
     {
         return $data->format('Y-m-d');
     }
+
+    /**
+     * @param $times
+     * @return string
+     */
     static function times_already($times)
     {
         $tpFormDate = $times;
