@@ -90,10 +90,10 @@
 					</form>
 				</div>
 
-				<div class="col-sm-12" style="margin-bottom: 50px;">
+				<div class="col-sm-12 mt-5">
 					<hr>
 					<p class="col-12">Pas encore inscrit(e) ?</p>
-					<a href="{{route('authentic', ['login' => 'singup'])}}" class="btn col-sm-10 offset-sm-1 col-10 offset-1 singbg-btn" style="padding: 14px; margin-top: 10px;"><h3 class="singup text-white">Créer un compte</h3></a>
+					<a href="{{route('authentic', ['login' => 'singup'])}}" class="btn col-sm-10 offset-sm-1 offset-0 singbg-btn py-2 mt-3"><h3 class="singup text-white">Créer un compte</h3></a>
 				</div>
 			</div>
 		</div>

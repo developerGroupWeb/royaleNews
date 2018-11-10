@@ -48,7 +48,7 @@
 
 								<ul>
 									<li>Accédez en illimité à <strong>l'intégralité des contenus</strong> sur tous vos écrans</li>
-									<li>Téléchargez <strong>votre journal en version numérique dès 7H</strong></li>
+									<li>Téléchargez <strong>votre journal en version numérique dès 6H</strong></li>
 									<li>Profitez d'une navigation <strong>sans publicité</strong></li>
 									<li>Bénéficiez d'un <strong>espace privilège</strong> réservé uniquement aux abonnés </li>
 								</ul>
@@ -112,14 +112,14 @@
 						<div class="card-body">
 							<ul class="" style="padding-top: 100px;">
 								<li>Accédez en illimité à <strong>l'intégralité des contenus</strong> sur tous vos écrans</li>
-								<li>Téléchargez <strong>votre journal en version numérique dès 7H</strong></li>
+								<li>Téléchargez <strong>votre journal en version numérique dès 6H</strong></li>
 								<li>Profitez d'une navigation <strong>sans publicité</strong></li>
 								<li>Bénéficiez d'un <strong>espace privilège</strong> réservé uniquement aux abonnés </li>
 								<li>Intégrer le club des lecteurs de la RoyaleNews</li>
 								<li>Diponibilité de toutes les archives de la RoyaleNews</li>
 							</ul>
 
-							<div class="text-center"><a href="{{route('members.checkout_standard')}}" class="btn bg-warning font-weight-bold px-4 py-2" style="color: #000;">JE M'ABONNE</a></div>
+							<div class="text-center"><a href="{{route('members.checkoutStandard')}}" class="btn bg-warning font-weight-bold px-4 py-2" style="color: #000;">JE M'ABONNE</a></div>
 						</div>
 					</div>
 				</div>
@@ -144,7 +144,7 @@
 							<ul class="pt-5">
 								<li>Recevez en exclusité le magasine La RoyaleMAG chaque fin du mois</li>
 								<li>Accédez en illimité à <strong>l'intégralité des contenus</strong> sur tous vos écrans</li>
-								<li>Téléchargez <strong>votre journal en version numérique dès 7H</strong></li>
+								<li>Téléchargez <strong>votre journal en version numérique dès 6H</strong></li>
 								<li>Profitez d'une navigation <strong>sans publicité</strong></li>
 								<li>Bénéficiez d'un <strong>espace privilège</strong> réservé uniquement aux abonnés</li>
 								<li>Intégrer le club des lecteurs de la RoyaleNews</li>
