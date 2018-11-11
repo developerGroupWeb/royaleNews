@@ -330,6 +330,20 @@
 	<footer class="" style="padding: 10px; background: #074e68;;">
 	    <h5 class="text-center mx-auto" style="color: #000;"><strong>© La Royale News 2018</strong></h5>
 	</footer>
+
+	<div id="help">
+		<div style="cursor: pointer;" class="helpMsg">
+			<h5 class="m-0 text bg-danger px-5 py-2" style="border-top-left-radius: 20px;">Besoin d'aide?</h5>
+		</div>
+
+		<div class="bg-white" id="helpMsgBox" style="border-top-left-radius: 20px;">
+			<form>
+				<div class="form-group">
+					<textarea class="form-control" placeholder="Envoyez un message" rows="4"></textarea>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>
 
 <script src="{{asset('js/singup.js')}}"></script>

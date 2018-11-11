@@ -21,4 +21,13 @@ $(function(){
         	$('.fa-bars').show();
         }
     });
+
+    var help = $('#help');
+
+    help.click(function() {
+        $(this).stop().animate({
+            position: 'fixed',
+            bottom: '-40px',
+        });
+    });
 });

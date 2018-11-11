@@ -1,3 +1,8 @@
+#help{
+	position: fixed;
+	bottom: -142px;
+	right: 0;
+}
 /*Css fullsreen on desktop*/
 .overlay { 
     height: 100%;
