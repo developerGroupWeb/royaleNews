@@ -244,4 +244,3 @@
         </ul>
     </div>
 </nav>
-<script src="{{asset('js/navmobile.js')}}"></script>

@@ -332,7 +332,10 @@
 	</footer>
 
 	<div id="help">
-		<div style="cursor: pointer;" class="helpMsg">
+		<div style="cursor: pointer;" id="helpMsg">
+			<h5 class="m-0 text bg-danger px-5 py-2" style="border-top-left-radius: 20px;">Besoin d'aide?</h5>
+		</div>
+		<div style="cursor: pointer; display: none;" id="helpMsgToo">
 			<h5 class="m-0 text bg-danger px-5 py-2" style="border-top-left-radius: 20px;">Besoin d'aide?</h5>
 		</div>
 

@@ -22,12 +22,39 @@ $(function(){
         }
     });
 
-    var help = $('#help');
+
+    var help = $('#helpMsg, #helpMsgToo');
 
     help.click(function() {
-        $(this).stop().animate({
-            position: 'fixed',
-            bottom: '-40px',
-        });
+
+        if(this.id == 'helpMsg'){
+
+            $('#help').stop().animate({
+                position: 'fixed',
+                bottom: '-90px',
+            }, 1000, 'linear');
+
+            $(this).hide();
+
+            $('#helpMsgToo').show();
+
+        }else{
+
+            $('#help').stop().animate({
+                position: 'fixed',
+                bottom: '-142px',
+            }, 1000, 'linear');
+
+            $(this).hide();
+
+            $('#helpMsg').show();
+        }
+
     });
+
+
+
+
+
+
 });
