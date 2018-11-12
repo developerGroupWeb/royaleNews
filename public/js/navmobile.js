@@ -31,8 +31,9 @@ $(function(){
 
             $('#help').stop().animate({
                 position: 'fixed',
-                bottom: '-90px',
-            }, 1000, 'linear');
+                bottom: '-10px',
+                width: '400px',
+            }, 1000);
 
             $(this).hide();
 
@@ -43,6 +44,7 @@ $(function(){
             $('#help').stop().animate({
                 position: 'fixed',
                 bottom: '-142px',
+                width: '250px',
             }, 1000, 'linear');
 
             $(this).hide();
