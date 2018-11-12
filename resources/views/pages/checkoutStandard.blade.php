@@ -340,10 +340,20 @@
 		</div>
 
 		<div class="bg-white" id="helpMsgBox" style="border-top-left-radius: 20px;">
+
+            <div id="contentMsg">
+
+                <ul id="chat">
+
+                </ul>
+
+            </div>
+
 			<form>
 				<div class="form-group">
-					<textarea class="form-control" placeholder="Envoyez un message" rows="4"></textarea>
+					<textarea class="form-control" id="textarea" placeholder="Envoyez un message" rows="4"></textarea>
 				</div>
+                <button id="send" display="none">Send</button>
 			</form>
 		</div>
 	</div>

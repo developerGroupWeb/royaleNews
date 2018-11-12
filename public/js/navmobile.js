@@ -1,4 +1,5 @@
 $(function(){
+
 	$('.fa-times').hide();
 
     $('.fa-bars').click(function () {
@@ -22,7 +23,14 @@ $(function(){
         }
     });
 
+    // Declaration the variables
 
+
+
+
+    /**
+     * show the box message
+     */
     var help = $('#helpMsg, #helpMsgToo');
 
     help.click(function() {
@@ -31,9 +39,18 @@ $(function(){
 
             $('#help').stop().animate({
                 position: 'fixed',
+<<<<<<< HEAD
                 bottom: '-10px',
                 width: '400px',
             }, 1000);
+=======
+                bottom: '-100px',
+            }, 1000, 'linear',
+                function () {
+                 // $('<li></li>').html('<span style="color:orange" id="cache">Hello, puis-je vous aider ?</span>').appendTo(chat);
+                }
+            );
+>>>>>>> a429e9debc3ead5794fba45146121ac91270548f
 
             $(this).hide();
 
@@ -43,16 +60,72 @@ $(function(){
 
             $('#help').stop().animate({
                 position: 'fixed',
+<<<<<<< HEAD
                 bottom: '-142px',
                 width: '250px',
+=======
+                bottom: '-372px',
+>>>>>>> a429e9debc3ead5794fba45146121ac91270548f
             }, 1000, 'linear');
 
             $(this).hide();
 
             $('#helpMsg').show();
+
+           // $('#cache').css('display', 'none');
         }
 
     });
+
+
+
+    /**
+     * script of instant message
+     */
+
+    var divHelp    = $('#help');
+    var contentMsg = divHelp.find('#contentMsg');
+    var chat       = contentMsg.find('#chat');
+    var send       = divHelp.find('#send');
+    var textarea   = divHelp.find('#textarea');
+
+    send.click(function () {
+
+        var message = textarea.val().trim();
+        var height     = contentMsg.height();
+        textarea.val('');
+        textarea.focus();
+
+        if(message.length > 0){
+
+            $('<li></li>').html('<img src="../images/student-865073_1920.jpg" id="profile"/> <span>' + message + '</span>').appendTo(chat);
+
+            contentMsg.stop().animate({
+                'scrollTop': '+=' + height,
+            }, 'slow', 'linear');
+
+            //alert(message.length)
+        }
+
+    });
+
+    /**
+     * script button send with touch enter windows
+     */
+    textarea.keypress(function (e) {
+
+        if(e.which == 13 || e.keyCode == 13){
+
+            e.preventDefault();
+            send.click();
+        }
+    });
+
+    //send.trigger('click');  //test de click automatique
+
+
+
+
 
 
 

@@ -1,8 +1,32 @@
 #help{
 	position: fixed;
-	bottom: -142px;
+	bottom: -372px;
 	right: 0;
 }
+
+#contentMsg{
+	height: 200px;
+	overflow-y: auto;
+}
+#contentMsg #chat{
+	list-style: none;
+}
+#contentMsg #chat li{
+    margin-top: 5px;
+}
+#contentMsg #profile{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
 /*Css fullsreen on desktop*/
 .overlay { 
     height: 100%;
