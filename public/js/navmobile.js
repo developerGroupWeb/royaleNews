@@ -39,33 +39,28 @@ $(function(){
 
             $('#help').stop().animate({
                 position: 'fixed',
-<<<<<<< HEAD
                 bottom: '-10px',
                 width: '400px',
             }, 1000);
-=======
-                bottom: '-100px',
-            }, 1000, 'linear',
+                /*bottom: '-100px',
+            ), 1000, 'linear',
                 function () {
-                 // $('<li></li>').html('<span style="color:orange" id="cache">Hello, puis-je vous aider ?</span>').appendTo(chat);
-                }
-            );
->>>>>>> a429e9debc3ead5794fba45146121ac91270548f
+                 $('<li></li>').html('<span style="color:orange" id="cache">Hello, puis-je vous aider ?</span>').appendTo(chat);
+                });
+            );*/
 
             $(this).hide();
 
             $('#helpMsgToo').show();
 
+
         }else{
 
             $('#help').stop().animate({
                 position: 'fixed',
-<<<<<<< HEAD
                 bottom: '-142px',
                 width: '250px',
-=======
                 bottom: '-372px',
->>>>>>> a429e9debc3ead5794fba45146121ac91270548f
             }, 1000, 'linear');
 
             $(this).hide();
