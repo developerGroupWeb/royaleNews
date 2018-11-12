@@ -1,4 +1,5 @@
 $(function(){
+
 	$('.fa-times').hide();
 
     $('.fa-bars').click(function () {
@@ -24,11 +25,7 @@ $(function(){
 
     // Declaration the variables
 
-    var divHelp    = $('#help');
-    var contentMsg = divHelp.find('#contentMsg');
-    var chat       = contentMsg.find('#chat');
-    var send       = divHelp.find('#send');
-    var textarea   = divHelp.find('#textarea');
+
 
 
     /**
@@ -69,10 +66,17 @@ $(function(){
 
     });
 
+
+
     /**
      * script of instant message
      */
 
+    var divHelp    = $('#help');
+    var contentMsg = divHelp.find('#contentMsg');
+    var chat       = contentMsg.find('#chat');
+    var send       = divHelp.find('#send');
+    var textarea   = divHelp.find('#textarea');
 
     send.click(function () {
 
