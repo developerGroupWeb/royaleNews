@@ -22,6 +22,58 @@ $(function(){
         }
     });
 
+<<<<<<< HEAD
+=======
+    // Declaration the variables
+
+
+
+
+    /**
+     * show the box message
+     */
+    var help = $('#helpMsg, #helpMsgToo');
+
+    help.click(function() {
+
+        if(this.id == 'helpMsg'){
+
+            $('#help').stop().animate({
+                position: 'fixed',
+                bottom: '-10px',
+                width: '400px',
+            }, 1000);
+                /*bottom: '-100px',
+            ), 1000, 'linear',
+                function () {
+                 $('<li></li>').html('<span style="color:orange" id="cache">Hello, puis-je vous aider ?</span>').appendTo(chat);
+                });
+            );*/
+
+            $(this).hide();
+
+            $('#helpMsgToo').show();
+
+
+        }else{
+
+            $('#help').stop().animate({
+                position: 'fixed',
+                bottom: '-142px',
+                width: '250px',
+                bottom: '-372px',
+            }, 1000, 'linear');
+
+            $(this).hide();
+
+            $('#helpMsg').show();
+
+           // $('#cache').css('display', 'none');
+        }
+
+    });
+
+>>>>>>> 2406c057c30cdaa75ff628067570f967f551e375
 
 
     /**
