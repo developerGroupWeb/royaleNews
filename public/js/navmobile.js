@@ -1,5 +1,4 @@
 $(function(){
-
 	$('.fa-times').hide();
 
     $('.fa-bars').click(function () {
@@ -23,60 +22,20 @@ $(function(){
         }
     });
 
-    // Declaration the variables
-
-
-
-
-    /**
-     * show the box message
-     */
-    var help = $('#helpMsg, #helpMsgToo');
-
-    help.click(function() {
-
-        if(this.id == 'helpMsg'){
-
-            $('#help').stop().animate({
-                position: 'fixed',
-                bottom: '-100px',
-            }, 1000, 'linear',
-                function () {
-                 // $('<li></li>').html('<span style="color:orange" id="cache">Hello, puis-je vous aider ?</span>').appendTo(chat);
-                }
-            );
-
-            $(this).hide();
-
-            $('#helpMsgToo').show();
-
-        }else{
-
-            $('#help').stop().animate({
-                position: 'fixed',
-                bottom: '-372px',
-            }, 1000, 'linear');
-
-            $(this).hide();
-
-            $('#helpMsg').show();
-
-           // $('#cache').css('display', 'none');
-        }
-
-    });
-
 
 
     /**
      * script of instant message
      */
 
+        // Declaration the variables
+
     var divHelp    = $('#help');
     var contentMsg = divHelp.find('#contentMsg');
     var chat       = contentMsg.find('#chat');
     var send       = divHelp.find('#send');
     var textarea   = divHelp.find('#textarea');
+    var admin      = chat.find('li');
 
     send.click(function () {
 
@@ -113,6 +72,48 @@ $(function(){
     //send.trigger('click');  //test de click automatique
 
 
+    /**
+     * show the box message
+     */
+    var help = $('#helpMsg, #helpMsgToo');
+
+    help.click(function() {
+
+        if(this.id == 'helpMsg'){
+
+            $('#help').stop().animate({
+                    position: 'fixed',
+                    bottom: '-100px',
+                }, 1000, 'linear',
+                function () {
+                  /*
+                  if(!admin.hasClass('admin')){
+
+                      $('<li></li>').html('<span style="color:orange" class="admin">Hello, puis-je vous aider ?</span>').appendTo(chat);
+                  }*/
+
+                }
+            );
+
+            $(this).hide();
+
+            $('#helpMsgToo').show();
+
+        }else{
+
+            $('#help').stop().animate({
+                position: 'fixed',
+                bottom: '-372px',
+            }, 1000, 'linear');
+
+            $(this).hide();
+
+            $('#helpMsg').show();
+
+            // $('#cache').css('display', 'none');
+        }
+
+    });
 
 
 
