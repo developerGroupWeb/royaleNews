@@ -1,18 +1,22 @@
 @extends('templates.template')
 
 @section('content')
+
     @include('templates.nav')
+
+    @if(isset($article) && isset($pages))
+
         <div class="rubric-content">
             <div class="container-fluid">
               <div class="row">
                 <h3 class="mx-auto mt-3" style="text-transform: uppercase;"><strong>{{$pages}}</strong></h3>
               </div>
-                @foreach($article as $detail)
+
                     <div class="mx-auto text-center w-75">
-                        <h2 class="">{{$detail->title}}</h2>
+                        <h2 class="">{{$article->title}}</h2>
                         <p>Par <a href="">Nom de l'editeur</a> Date end time</p>
                     </div>
-                @endforeach
+
 
               <hr>
             </div>
@@ -21,13 +25,11 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="row">
-                            @foreach($article as $detail)
 
-                                <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$detail->pictures}}" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
-                                <h5 class="mb-4 p-3"><strong>{{$detail->content}}</strong></h5>
-                                <p class="p-3">{{$detail->contents}}</p>
+                                <img src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$article->pictures}}" class="img-responsive img-thumbnail" style="width:100%" alt="Image">
+                                <h5 class="mb-4 p-3"><strong>{{$article->content}}</strong></h5>
+                                <p class="p-3">{{$article->contents}}</p>
 
-                            @endforeach
                         </div>
 
                         <div class="row bg-light p-4">
@@ -83,4 +85,7 @@
                 </div>
             </div>
         </div>
+
+    @endif
+
 @stop

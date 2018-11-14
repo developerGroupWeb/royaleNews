@@ -55,6 +55,6 @@ class rubricService
         //dd($une);
     }
     static function show($id){
-        return $article = Article::where(['id' => $id])->get();
+        return $article = Article::find($id);
     }
 }
