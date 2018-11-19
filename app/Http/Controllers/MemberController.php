@@ -11,10 +11,6 @@ class MemberController extends Controller
         return view('pages.abonnement');
     }
 
-    function contacts(){
-        return view('pages.contacts');
-    }
-
     function checkoutStandard(){
         return view('pages.checkoutStandard');
     }

@@ -16,15 +16,19 @@ Route::get('/', [
     'uses' => 'HomeController@index'
 ]);
 
-Route::get('{rubrics}', [
-    'as'   => 'rubric.all',
-    'uses' => 'RubricController@all'
-]);
+Route::group(['prefix' => 'rubric'], function(){
 
-Route::get('{rubrics}/{start_at}/{id}-{slug}', [
-    'as'   => 'rubric.show',
-    'uses' =>'RubricController@show'
-])->where(['id' => '[0-9]+', 'slug' => '[a-zA-Z0-9- ]+', 'start_at' => '[0-9-]+']);
+    Route::get('{rubrics}', [
+        'as'   => 'rubric.all',
+        'uses' => 'RubricController@all'
+    ]);
+
+    Route::get('{rubrics}/{start_at}/{id}-{slug}', [
+        'as'   => 'rubric.show',
+        'uses' =>'RubricController@show'
+    ])->where(['id' => '[0-9]+', 'slug' => '[a-zA-Z0-9- ]+', 'start_at' => '[0-9-]+']);
+
+});
 
 
 Route::group(['prefix' => 'auth'], function (){
@@ -54,15 +58,11 @@ Route::group([], function (){
             'uses' => 'MemberController@abonnement'
         ]);
 
-        Route::get('contacts', [
-            'as'   => 'members.contacts',
-            'uses' => 'MemberController@contacts'
-        ]);
-
-
     });
 
 });
+
+Route::get('{more}', 'TvController@index')->name('tv');
 
 
 
