@@ -45,6 +45,7 @@
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}">Dossiers d'actualité</a></li>
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}">Le conseil des minitres</a></li>
             <li class="li"><a href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}">Histoires d'afrique</a></li>
+            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'tv'])}}"> La RN tv</a></li>
             <li class="li"><a href="">Publicité</a></li>
             <hr style="background-color: #fff;">
           </ul>
@@ -127,6 +128,7 @@
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}"><strong>Dossiers d'actualité</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}"><strong>Le conseil des minitres</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}"><strong>Histoires d'afrique</strong></a>
+                    <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'tv'])}}"><strong>La RoyaleNews tv</strong></a>
                   </div>
                 </li>
             </ul>

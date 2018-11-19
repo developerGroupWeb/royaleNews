@@ -487,7 +487,7 @@
                             </div>
                         </div>
                         <hr class="bg-white">
-                        <small class="text-right d-block opinion-items mr-3"><strong><a href=""><i class="fa fa-angle-double-right" aria-hidden="true"></i>TOUTE LA ROYALENEWS TV</a></strong></small>
+                        <small class="text-right d-block opinion-items mr-3"><strong><a href="{{route('rubric.all',['rubrics' => 'tv'])}}"><i class="fa fa-angle-double-right" aria-hidden="true"></i>TOUTE LA ROYALENEWS TV</a></strong></small>
                     </div>
                 </div>
                  <hr>
