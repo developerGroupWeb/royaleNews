@@ -127,6 +127,7 @@
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}"><strong>Dossiers d'actualité</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}"><strong>Le conseil des minitres</strong></a>
                     <a class="dropdown-item" href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}"><strong>Histoires d'afrique</strong></a>
+                      <a class="dropdown-item" href="{{route('tv', ['more' => 'tv'])}}"><strong>Tv</strong></a>
                   </div>
                 </li>
             </ul>
