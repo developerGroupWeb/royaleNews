@@ -23,8 +23,9 @@ $(document).ready(function()
         });
 
 
+        $(".searchBar-content").hide();
         $(".open-searchBar").click(function() {
-            $(".searchBar-content").show(300);
+            $(".searchBar-content").slideToggle(500);
         });
 
    });
