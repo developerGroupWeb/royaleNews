@@ -79,7 +79,7 @@
 	background-color: #f1f1f1;
 }
 
-.title-label,.bg-rnews, .singbg-btn{
+.title-label, .bg-rnews, .singbg-btn{
 	color: #000;
 	background: #00c6ff;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #00c6ff, #0072ff);  /* Chrome 10-25, Safari 5.1-6 */

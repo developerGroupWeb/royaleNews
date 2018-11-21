@@ -43,46 +43,35 @@
             </div>
           </div>
 
-          <div class="col-md-4 bg-light">
+          <div class="col-md-4 bg-light" style="position: fixed; overflow: auto; height: 700px; right: 20px;">
             <div class="row">
-              <div class="py-3">
-                <h3 class="ml-3 mb-3">Les dernières vidéos</h3>
-                <div class="list-unstyled">
-                  <div class="media  ml-1 my-2 col-12">
-                    <div class="row border-bottom">
-                      <div class="col-md-5 col-6">
-                        <div class="row">
-                          <img class="mr-2  w-100" src="{{asset('images/5889.jpg')}}" alt="Generic placeholder image" >
-                        </div>
-                      </div>
+              <h3 class="ml-3 my-3">Les dernières vidéos</h3>
+            </div>
 
-                      <div class="col-md-7 col-6">
-                        <div class="row">
-                          <div class="media-body">
-                            <h5 class="">List-based media object</h5>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <li class="media my-4">
-                    <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-1">List-based media object</h5>
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                  </li>
-                  <li class="media">
-                    <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
-                    <div class="media-body">
-                      <h5 class="mt-0 mb-1">List-based media object</h5>
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                    </div>
-                  </li>
+            <div class="media row my-2 px-2">
+              <div class="col-md-5 col-5">
+                <div class="row">
+                    <img class="img-fluid mr-2" src="{{asset('images/a0fca1e_h67KC3d-oLZ_V0WRvD-Pkpoo.jpg')}}" alt="Generic placeholder image" >
                 </div>
               </div>
-              
+
+              <div class="col-md-7 col-7">
+                <div class="row">
+                  <div class="media-body">
+                    <h5 class="">List-based media object</h5>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <h5 class="mt-0 mb-1">List-based media object</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<h5 class="mt-0 mb-1">List-based media object
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h5><h5 class="mt-0 mb-1">List-based media object</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<h5 class="mt-0 mb-1">List-based media object
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h5>
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<h5 class="mt-0 mb-1">List-based media object
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h5>
           </div>
         </div>
       </div>
