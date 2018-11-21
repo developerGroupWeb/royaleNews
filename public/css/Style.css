@@ -27,6 +27,11 @@
 
 
 /*Css fullsreen on desktop*/
+
+.menuFullScreen .nav-item:hover{
+	border-left: 6px solid rgba(0,198,255, .1);
+	transition: 0.5s;
+}
 .overlay { 
     height: 100%;
     width: 0;
@@ -38,25 +43,6 @@
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    width: 100%;
-    text-align: center; 
-    margin-top: 30px;
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    color: #818181;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-    text-decoration: none;
 }
 
 .overlay .closebtn {
@@ -71,8 +57,8 @@
 }
 
 .menuFullScreen-content img{
-    height: 260px;
-    max-height: 260px;
+    height: 208px;
+    max-height: 208px;
 }
 
 .menuFullScreen-content .card-img-overlay{

@@ -1,57 +1,57 @@
 <!--Side navbar on mobile-->
 <nav class="d-md-none">
-    <div class="header-mob navbar fixed-top shadow" style="background: #fff;">
-        <div>
-            <span class="fa fa-bars" style="color: #111;"></span>
-            <span class="fa fa-times" style="color: #111;"></span>
-        </div>
-        <div class="title-mo">
-            <a href="{{route('root_path')}}">
-                <h5 class="text-dark"><strong>LA ROYALE<span class="pt-0 px-2 pb-1 rounded title-label">News</span></strong></h5>
-            </a>
-        </div>
-        <div>
-          <a href="{{route('authentic', ['login' => 'singin'])}}">
-            <span class="fa fa-user-circle-o" style="color: #111;"></span>
+  <div class="header-mob navbar fixed-top shadow" style="background: #fff;">
+      <div>
+          <span class="fa fa-bars" style="color: #111;"></span>
+          <span class="fa fa-times" style="color: #111;"></span>
+      </div>
+      <div class="title-mo">
+          <a href="{{route('root_path')}}">
+              <h5 class="text-dark"><strong>LA ROYALE<span class="pt-0 px-2 pb-1 rounded title-label">News</span></strong></h5>
           </a>
-        </div>
-    </div>
+      </div>
+      <div>
+        <a href="{{route('authentic', ['login' => 'singin'])}}">
+          <span class="fa fa-user-circle-o" style="color: #111;"></span>
+        </a>
+      </div>
+  </div>
 
-    <div id="mySidenavLeft" class="sidenavLeft">
-        <ul class="list-unstyled">
-            <li class="nav-item">
-              <a class="nav-link rounded font-weight-bold bg-warning py-2 text-center" style="color: #000;" href="{{route('members.abonnement')}}">ABONNEZ-VOUS<br/><span class="text-white">1 mois gratuit offert</span></a>
-            </li>
-            <hr style="background-color: #fff;">
-            <li class="">
-                <form>
-                    <div class="form-group">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    </div>
-                </form>
-            </li>
-            <hr style="background-color: #fff;">
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'politique'])}}">Politique</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'opinion'])}}">Opinion</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'économie'])}}">Économie</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'enquêtes'])}}">Enquêtes</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'international'])}}">International</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'sport'])}}">Sport</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'santé'])}}">Santé</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'éducation'])}}">Éducation</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'tech-innovation'])}}">Tech-Innovation</a></li>
-            <hr style="background-color: #fff;">
-            <li class="li"><a href="">Top info</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}">Dossiers d'actualité</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}">Le conseil des minitres</a></li>
-            <li class="li"><a href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}">Histoires d'afrique</a></li>
-            <li class="li"><a href="{{route('tv', ['more' => 'tv'])}}"> La RN tv</a></li>
-            <li class="li"><a href="">Publicité</a></li>
-            <hr style="background-color: #fff;">
-          </ul>
-        </div>
-      </nav>
-    <!--end side navbar mobile-->
+  <div id="mySidenavLeft" class="sidenavLeft">
+    <ul class="list-unstyled">
+      <li class="nav-item">
+        <a class="nav-link rounded font-weight-bold bg-warning py-2 text-center" style="color: #000;" href="{{route('members.abonnement')}}">ABONNEZ-VOUS<br/><span class="text-white">1 mois gratuit offert</span></a>
+      </li>
+      <hr style="background-color: #fff;">
+      <li class="">
+          <form>
+              <div class="form-group">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              </div>
+          </form>
+      </li>
+      <hr style="background-color: #fff;">
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'politique'])}}">Politique</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'opinion'])}}">Opinion</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'économie'])}}">Économie</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'enquêtes'])}}">Enquêtes</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'international'])}}">International</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'sport'])}}">Sport</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'santé'])}}">Santé</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'éducation'])}}">Éducation</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'tech-innovation'])}}">Tech-Innovation</a></li>
+      <hr style="background-color: #fff;">
+      <li class="li"><a href="">Top info</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'dossiers-d\'actualité'])}}">Dossiers d'actualité</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'le-conseil-des-ministres'])}}">Le conseil des minitres</a></li>
+      <li class="li"><a href="{{route('rubric.all',['rubrics' => 'histoires-d\'afrique'])}}">Histoires d'afrique</a></li>
+      <li class="li"><a href="{{route('tv', ['more' => 'tv'])}}"> La RN tv</a></li>
+      <li class="li"><a href="">Publicité</a></li>
+      <hr style="background-color: #fff;">
+    </ul>
+  </div>
+</nav>
+<!--end side navbar mobile-->
 
     
     <!--header navbar on desktop-->
@@ -91,7 +91,7 @@
     </div>
 
     <div class="d-none d-md-block sticky-top">
-    <nav class="navbar navbar-dark navbar-expand-sm" style="background: #000000;">
+      <nav class="navbar navbar-dark navbar-expand-sm" style="background: #000000;">
         <div class="pl-3 pt-1 pb-1 rounded m-auto" style="cursor: pointer; background: #393434;">
             <span class="fa fa-bars mr-3" onclick="openNav()" style="font-size: 23px; color: #eee;"><small style="font-family: 'Arial';"> MENU</small></span>
         </div>
@@ -133,7 +133,7 @@
                 </li>
             </ul>
             <div class="navbar-nav ml-auto">
-                <div class="nav-item" style="color: #eee; cursor: pointer;">
+                <div class="nav-item open-searchBar" style="color: #eee; cursor: pointer;">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </div>
@@ -142,7 +142,7 @@
     </div>
 
     <!--Search bar content-->
-    <div class="searchBar-content d-none">
+    <div class="searchBar-content">
       <div class="bg-dark py-2 d-none d-md-block">
         <form class="col-6 offset-3 d-inline-flex" action="" method="">
           <input type="search" name="" id="searchBar" class="w-100 pl-3 py-2">
@@ -177,21 +177,18 @@
           <div class="row p-3">
             <div class="col-md-3">
               <div class="row">
-                <ul class="nav flex-column w-100 font-weight-bold" style="font-size: 20px; text-transform: uppercase; ">
-                  <li class="nav-itembg-dark pl-3">
-                    <a class="nav-link avtive" href="Opinion.php">Opinion</a>
+                <ul class="nav flex-column w-100 font-weight-bold menuFullScreen" style="font-size: 20px; text-transform: uppercase; ">
+                  <li class="nav-item bg-dark pl-3">
+                    <a class="nav-link avtive" href="">Opinion</a>
                   </li>
                   <li class="nav-item bg-dark my-2 pl-3">
-                    <a class="nav-link" href="Enquetes.php">enquêtes</a>
+                    <a class="nav-link" href="">enquêtes</a>
+                  </li>
+                  <li class="nav-item bg-dark mb-2 pl-3">
+                    <a class="nav-link active" href="">Politique</a>
                   </li>
                   <li class="nav-item bg-dark pl-3">
-                    <a class="nav-link active" href="Politique.php">Politique</a>
-                  </li>
-                  <li class="nav-item bg-dark my-2 pl-3">
-                    <a class="nav-link" href="Economie.php">économie</a>
-                  </li>
-                  <li class="nav-item bg-dark pl-3">
-                    <a class="nav-link" href="International.php">International</a>
+                    <a class="nav-link" href="">International</a>
                   </li>
                 </ul>
               </div>
@@ -211,7 +208,7 @@
                   </div>
 
                   <div class="card bg-dark text-white item2">
-                    <img class="card-img" src="{{asset('images/images25525415.jpg')}}" alt="Card image">
+                    <img class="card-img" src="{{asset('images/5889.jpg')}}" alt="Card image">
                     <div class="card-img-overlay item2-overlay">
                       <h5 class="card-title">Card title</h5>
                       
@@ -220,7 +217,7 @@
                   </div>
 
                   <div class="card bg-dark text-white item3">
-                    <img class="card-img" src="{{asset('images/images25525415.jpg')}}" alt="Card image">
+                    <img class="card-img" src="{{asset('images/depuis-plus-de-neuf-ans-jean-luc-melenchon-a-fait-de-la-detestation-des-journalistes-sa-marque-de-fabrique_6120286.jpg')}}" alt="Card image">
                     <div class="card-img-overlay item3-overlay">
                       <h5 class="card-title">Card title</h5>
                       
@@ -233,8 +230,6 @@
           </div>
         </div> 
         
-
-        <!-- Overlay content -->
         <div class="overlay-content">
           <a href="#">About</a>
           <a href="#">Services</a>
@@ -242,7 +237,3 @@
           <a href="#">Contact</a>
         </div>
       </div>
-    </div>
-        </ul>
-    </div>
-</nav>
