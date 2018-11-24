@@ -5,7 +5,7 @@
     <div class="content-media-tv bg-dark pt-4">
       <nav class="navbar navbar-expand navbar-light">
         <div class="title-mo">
-            <a href="{{route('root_path')}}">
+            <a href="">
                 <h5 class="text-white"><strong>LA ROYALE <span class="pt-0 px-2 pb-1 rounded title-label">TV</span></strong></h5>
             </a>
         </div>
@@ -24,7 +24,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-white" href="#"><i class="fa fa-home" style="font-size: 23px;" aria-hidden="true"></i> <span class="d-none d-md-inline-block">laroyalenews.com</span></a>
+              <a class="nav-link text-white" href="{{route('root_path')}}"><i class="fa fa-home" style="font-size: 23px;" aria-hidden="true"></i> <span class="d-none d-md-inline-block">laroyalenews.com</span></a>
             </li>
           </ul>
         </div>
@@ -34,16 +34,23 @@
       <div class="container-fluid">
         <hr class="row bg-light">
 
-        <div class="row px-3">
+        <div class="row">
           <div class="col-md-8">
-            <div class="row">
+            <div class="row px-3">
               <h5 class="mt-0 mb-1">List-based media object</h5>
-                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<h5 class="mt-0 mb-1">List-based media object
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<h5>List-based media object
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h5>
+
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<h5>List-based media object
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h5>
+                      <h5 class="mt-0 mb-1">List-based media object</h5>
+                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.<h5>List-based media object
                       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</h5>
             </div>
           </div>
 
-          <div class="col-md-4 bg-light" style="position: fixed; overflow: auto; height: 700px; right: 20px;">
+          <div class="col-md-4 bg-light" >
             <div class="row">
               <h3 class="ml-3 my-3">Les dernières vidéos</h3>
             </div>
