@@ -45,6 +45,23 @@
     transition: 0.5s;
 }
 
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center; 
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
 .overlay .closebtn {
     position: absolute;
     top: -10px;
