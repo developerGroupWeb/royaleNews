@@ -4,7 +4,7 @@ namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Article extends Model
+class User extends Model
 {
     public $timestamps = true;
 
@@ -12,6 +12,17 @@ class Article extends Model
 
         'created_at' => 'datetime',
         'updated_at' => 'datetime'
+    ];
+
+    protected $fillable = [
+
+        'name',
+        'surname',
+        'email',
+        'password',
+        'civility',
+        'news',
+        'partner'
     ];
 
     function comments(){

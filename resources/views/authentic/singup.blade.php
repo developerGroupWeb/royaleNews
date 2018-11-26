@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-              <a href="{{route('authentic', ['login' => 'singin'])}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
+              <a href="{{route('singin')}}" class="nav-link btn px-4 singbg-btn" style="color: #fff;"><strong>Se connecter</strong>
               </a>
           </li>
       </ul>
@@ -25,7 +25,7 @@
       <div class="row">
         <h1 class="text-center mx-auto mb-5" style="color: #333;">Créez votre compte<br>en 1 minute.</h1>
         <h4 class="text-center mx-auto">Vous pourrez profiter des services gratuits de La Royale News sur tous les supports.</h4>
-        <h6 class="d-block d-sm-none text-center mx-auto"><strong>Déjà inscrit(e) ? <a href="{{route('authentic', ['login' => 'singin'])}}">Connectez-vous</a></strong></h6>
+        <h6 class="d-block d-sm-none text-center mx-auto"><strong>Déjà inscrit(e) ? <a href="{{route('singin')}}">Connectez-vous</a></strong></h6>
 
         <div class="col-12">
           <div class="row">
@@ -63,57 +63,75 @@
             <div class="col-12">
 
             <form method="post" action="" id="singup">
+
                 {{csrf_field()}}
+
               <div class="radio">
                     <span style="margin-right: 20px;">Civilité: </span>
                     <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option1"> Madame
+                      <input type="radio" name="civility" id="inlineRadio" value="madame"> Madame
                     </label>
                     <label class="radio-inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadio" value="option2"> Monsieur
+                      <input type="radio" name="civility" id="inlineRadio" value="monsieur"> Monsieur
                     </label>
-                    <small style="margin-left: 20px; color: red;">(Civilité obligatoire)</small>
+                    <small style="margin-left: 20px; color: red;"><span style="color: red; font-style: italic">{{ $errors->first('civility') }}</span> </small>
               </div>
 
                   <div class="row">
                     <div class="form-group col-sm-6">
                       <label for="firstname">Prénom</label>
-                      <input type="text" class="form-control" id="firstname" title="first name" placeholder="Votre prénom"><span class="error"></span>
+                      <input type="text" name="name" class="form-control" id="firstname" title="first name" placeholder="Votre prénom" value="{{ old('name') }}"><span class="error"></span>
                     </div>
+
+                      <span style="color: red; font-style: italic">{{ $errors->first('name') }}</span>
 
                     <div class="form-group col-sm-6">
                       <label for="surname">Nom</label>
-                      <input type="text" class="form-control" id="surname" title="surname" placeholder="Votre nom"><span class="error"></span>
+                      <input type="text" name="surname" class="form-control" id="surname" title="surname" placeholder="Votre nom" value="{{ old('surname') }}"><span class="error"></span>
                     </div>
+
+                      <span style="color: red; font-style: italic">{{ $errors->first('surname') }}</span>
+
                   </div>
               <div class="form-group">
                 <label for="email">E-mail</label>
-                <input type="email" class="form-control " id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
+                <input type="email" name="email" class="form-control " id="email" title="email" placeholder="email@mail.fr" value="{{ old('email') }}"><span class="error"></span>
               </div>
+
+                <span style="color: red; font-style: italic">{{ $errors->first('email') }}</span>
 
               <div class="form-group">
                 <div class="">
                   <label class="pull-left" for="password">Créer un mot de passe</label>
                   <span class="pull-right" style="font-size: 15px; color: #1abc9c;"><i class="fa fa-eye" id="fa-eye" aria-hidden="true">Afficher</i><i class="fa fa-eye-slash" id="fa-eye-slash" aria-hidden="true" style="display: none;">Cacher</i></span>
               </div>
-                <input type="password" class="form-control" id="password" title="password" placeholder="Au moins 8 caratères, 1 majuscule, 1 chiffre"><span class="error"></span>
+                <input type="password" name="password" class="form-control" id="password" title="password" placeholder="Au moins 8 caratères, 1 majuscule, 1 chiffre"><span class="error"></span>
               </div>
+
+                <span style="color: red; font-style: italic">{{ $errors->first('password') }}</span>
 
               <div class="form-group">
                           <label class="pull-left" for="password">Confirmer mot de passe</label>
-                          <input type="password" class="form-control" id="passwordConfirm" title="password confirm" placeholder="Confirmer mot de passe"><span class="error"></span>
+                          <input type="password" name="password_confirmation" class="form-control" id="passwordConfirm" title="password confirm" placeholder="Confirmer mot de passe"><span class="error"></span>
                   </div>
+
+                <span style="color: red; font-style: italic">{{ $errors->first('password_confirmation') }}</span>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Oui, je souhaite recevoir les informations de laroyalepresse.com
+                      <input type="checkbox" name="news" value="1"> Oui, je souhaite recevoir les informations de laroyalepresse.com
                     </label>
-                  </div>
+
+                      <span style="color: red; font-style: italic">{{ $errors->first('news') }}</span>
+
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Oui, je souhaite recevoir les informations des partenaires de laroyalepresse.com
+                      <input type="checkbox" name="partner" value="1"> Oui, je souhaite recevoir les informations des partenaires de laroyalepresse.com
                     </label>
                   </div>
+
+                      <span style="color: red; font-style: italic">{{ $errors->first('partner') }}</span>
+
                   <div class="checkbox">
                     <label>
                       <input type="checkbox" required="required" checked="">J'accepte les <a href="">conditions générales de vente</a> et <a href="">conditions générales d'utilisation</a>

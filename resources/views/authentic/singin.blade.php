@@ -1,6 +1,9 @@
 @extends('templates.template')
 
 @section('content')
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <div class="">
 	<nav class="navbar navbar-expand-sm fixed-top px-5 shadow" style="background: #000000;">>
 		<a class="navbar-brand" href="{{route('root_path')}}" style="color: #fff;">
@@ -56,10 +59,17 @@
 	      		</div>
 
 		      	<div class="col-12">
+
+					<div class="alert alert-danger" id="alert" style="display: none"></div>
+
+
 					<form method="post" action="" id="singin">
+
+						{{csrf_field()}}
+
 					  <div class="form-group row">
 					    <label for="email">E-mail</label>
-					    <input type="email" class="form-control" id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
+					    <input type="email" name="email"  class="form-control" id="email" title="email" placeholder="email@mail.fr"><span class="error"></span>
 					  </div>
 
 					  <div class="form-group row">
@@ -72,13 +82,13 @@
 						    	</span>
 						    </div>
 						</div>
-					    <input type="password" class="form-control" id="password" title="password" placeholder="Votre mot de passe"><span class="error"></span>
+					    <input type="password" name="password" class="form-control" id="password" title="password" placeholder="Votre mot de passe"><span class="error"></span>
 					  </div>
 
 					  <div class="">
 						  <div class="checkbox">
 						    <label class="pull-left">
-						      <input type="checkbox" checked> Rester connecter
+						      <input type="checkbox" name="remember" checked value="1" id="remember"> Rester connecter
 						    </label>
 						  </div>
 						  <div class="pull-right forget-password"><a href="" style="color: #333;">Mot de passe oublié?</a></div>
@@ -93,7 +103,7 @@
 				<div class="col-sm-12 mt-5">
 					<hr>
 					<p class="col-12">Pas encore inscrit(e) ?</p>
-					<a href="{{route('authentic', ['login' => 'singup'])}}" class="btn col-sm-10 offset-sm-1 offset-0 singbg-btn py-2 mt-3"><h3 class="singup text-white">Créer un compte</h3></a>
+					<a href="{{route('singup')}}" class="btn col-sm-10 offset-sm-1 offset-0 singbg-btn py-2 mt-3"><h3 class="singup text-white">Créer un compte</h3></a>
 				</div>
 			</div>
 		</div>
@@ -111,5 +121,38 @@
 		</div>
 	</footer>
 </div>
+
+<script>
+
+    // Ajax----------------------------------------------------
+
+    $(document).on('submit', '#singin', function (event) {
+
+        event.preventDefault();
+
+        //alert($(this).serialize())
+        $.ajax({
+
+            url: "{{ route('singin.create') }}",
+            method: "POST",
+            data: $(this).serialize(),
+            success: function (result) {
+
+                if(result != ''){
+
+                    $('#alert').html(result).show();
+
+                }else{
+
+                    window.location = "{{route('members.checkoutStandard')}}";
+                }
+            }
+
+        });
+
+    });
+
+</script>
 <script src="{{asset('js/singin.js')}}"></script>
+
 @stop

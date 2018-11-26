@@ -14,7 +14,7 @@
 		    <div class="collapse navbar-collapse">
 			    <ul class="navbar-nav ml-auto">
 			      	<li class="nav-item">
-			      	  	<a href="{{route('authentic', ['login' => 'singin'])}}" class="nav-link btn px-4" style="background: #000; color: #fff;"><img src="{{asset('images/user.svg')}}" style="width: 30px; height:
+			      	  	<a href="{{route('singin')}}" class="nav-link btn px-4" style="background: #000; color: #fff;"><img src="{{asset('images/user.svg')}}" style="width: 30px; height:
 		      	  	30px; margin-right: 10px;"> <strong>Espace abonné</strong>
 			      	  	</a>
 			      	</li>
@@ -272,7 +272,7 @@
 				<h3 class="mx-auto text-dark">Pour plus de renseignements</h3>
 			</div>
 			<div class="row">
-				<h2 class="mx-auto my-3"><a href="{{route('members.contacts')}}" class="text-center">Contactez-nous !</a></h2>
+				<h2 class="mx-auto my-3"><a href="" class="text-center">Contactez-nous !</a></h2>
 			</div>
 		</div>
 	</div>

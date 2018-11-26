@@ -33,10 +33,11 @@ Route::group(['prefix' => 'rubric'], function(){
 
 Route::group(['prefix' => 'auth'], function (){
 
-    Route::get('{login}', [
-        'as'   => 'authentic',
-        'uses' => "AuthenticController@authentic"
-    ]);
+    Route::get('singup', 'Authentic\\singupController@create')->name('singup');
+    Route::post('singup', 'Authentic\\singupController@store')->name('singup.create');
+
+    Route::get('singin', 'Authentic\\singinController@create')->name('singin');
+    Route::post('singin', 'Authentic\\singinController@store')->name('singin.create');
 });
 
 Route::group([], function (){
