@@ -3,7 +3,7 @@
 @section('content')
     
     <div class="content-media-tv bg-dark pt-4">
-      <nav class="navbar navbar-expand navbar-light">
+      <nav class="navbar navbar-expand navbar-light" style="background-color: rgb(0, 0, 0);">
         <div class="title-mo">
             <a href="">
                 <h5 class="text-white"><strong>LA ROYALE <span class="pt-0 px-2 pb-1 rounded title-label">TV</span></strong></h5>
@@ -97,22 +97,32 @@
 
           <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3 mb-3">
-              <div class="card">
+              <div class="">
                 <video width="" height="" controls class="w-100" style="">
-                  <source src="{{asset('videos/FallyIpupa.mp4')}}" type="video/mp4">
+                  <source src="{{asset('videos/videoplayback.mp4')}}" type="video/mp4">
                 </video>
               
                 <div class="card-body">
-                  <h5 class="">Title</h5>
+                  <h5 class="text-white">Title</h5>
                 </div>
-                <div class="card-footer">
-                  <small class="">il y a <span>...</span></small>
+                <div class="">
+                  <small class="text-white">il y a <span>...</span></small>
                 </div>
               </div>
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <video width="" height="" controls autoplay class="">
+                <video width="" height="" controls class="w-100">
+                  <source src="{{asset('videos/FallyIpupa.mp4')}}" type="video/mp4">
+                </video>
+              </div>
+              <div class="card-body">
+                <h5>Title</h5>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="card">
+                <video width="" height="" controls class="">
                   <source src="{{asset('videos.FallyIpupa.mp4')}}" type="video/mp4">
                 </video>
               </div>
@@ -122,7 +132,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <video width="" height="" controls autoplay class="">
+                <video width="" height="" controls class="">
                   <source src="{{asset('videos.FallyIpupa.mp4')}}" type="video/mp4">
                 </video>
               </div>
@@ -132,7 +142,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <video width="" height="" controls autoplay class="">
+                <video width="" height="" controls class="">
                   <source src="{{asset('videos.FallyIpupa.mp4')}}" type="video/mp4">
                 </video>
               </div>
@@ -142,17 +152,7 @@
             </div>
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="card">
-                <video width="" height="" controls autoplay class="">
-                  <source src="{{asset('videos.FallyIpupa.mp4')}}" type="video/mp4">
-                </video>
-              </div>
-              <div class="card-body">
-                <h5>Title</h5>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="card">
-                <video width="" height="" controls autoplay class="">
+                <video width="" height="" controls class="">
                   <source src="{{asset('videos.FallyIpupa.mp4')}}" type="video/mp4">
                 </video>
               </div>
