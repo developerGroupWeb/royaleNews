@@ -29,7 +29,7 @@
                          </ol>
                          <div class="carousel-inner">
                              <div class="carousel-item active">
-                                 @foreach($unes as $une)
+                                 @foreach($inters as $une)
                                  <a href="{{route('rubric.show', [strtolower($une->rubric), $formatData($une->created_at), $une->id, $une->slug])}}">
                                      <span class="badge badge-primary">{{$une->rubric}}</span>
                                      <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$une->pictures}}" alt="First slide">
@@ -39,17 +39,101 @@
                                  </a>
                                  @endforeach
                              </div>
-                             @foreach($suites as $suite)
-                             <div class="carousel-item">
- 
-                                 <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
-                                     <span class="badge badge-primary">{{$suite->rubric}}</span>
-                                     <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
-                                     <div class="carousel-caption carousel-caption-bg">
-                                         <h2 class="title">{{$suite->title}}</h2>
-                                     </div></a>
- 
-                             </div>
+                             @foreach($polis as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
+                             @endforeach
+                             @foreach($educ as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
+                             @endforeach
+                             @foreach($enqs as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
+                             @endforeach
+                             @foreach($sport as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
+                             @endforeach
+                             @foreach($sante as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
+                             @endforeach
+                             @foreach($opt as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
+                             @endforeach
+                             @foreach($eco as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
+                             @endforeach
+                             @foreach($tech as $suite)
+                                 <div class="carousel-item">
+
+                                     <a href="{{route('rubric.show', [strtolower($suite->rubric), $formatData($suite->created_at), $suite->id, $suite->slug])}}">
+                                         <span class="badge badge-primary">{{$suite->rubric}}</span>
+                                         <img class="d-block w-100 img-fluid" src="http://127.0.0.1/royaleAdmin/public/storage/pictures/{{$suite->pictures}}" alt="Second slide">
+                                         <div class="carousel-caption carousel-caption-bg">
+                                             <h2 class="title">{{$suite->title}}</h2>
+                                         </div></a>
+
+                                 </div>
                              @endforeach
                          </div>
                          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

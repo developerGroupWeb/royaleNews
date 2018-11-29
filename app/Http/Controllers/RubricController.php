@@ -16,6 +16,7 @@ class RubricController extends Controller
     public function all($rubrics)
     {
         $une       = rubricService::dataUne($rubrics);
+        //dd($une);
         $firstTwo  = rubricService::dataTheFirstTwo($rubrics);
         $firstTree = rubricService::dataTheFirstTree($rubrics);
         $article   = rubricService::foundArticle($rubrics);

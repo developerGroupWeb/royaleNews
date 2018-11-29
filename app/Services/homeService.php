@@ -11,11 +11,11 @@ use App\models\Article;
 
 class homeService
 {
-    static function dataForIntervalFollowingPosition($position, $skip, $take){
-        return Article::where('position', $position)
-                        ->orderBy('created_at')
-                        ->skip($skip)
+    static function dataForIntervalFollowingPosition($position, $rubric, $take){
+        return Article::where(['position' => $position, 'rubric' => $rubric])
+                        ->orderBy('created_at', 'desc')
                         ->take($take)
                         ->get();
     }
+
 }
