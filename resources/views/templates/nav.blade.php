@@ -2,7 +2,7 @@
 <nav class="d-md-none">
   <div class="header-mob navbar fixed-top shadow" style="background: #fff;">
       <div>
-          <span class="fa fa-bars" style="color: #111;"></span>
+          <span class="fa fa-bars humbeger" style="color: #111;"></span>
           <span class="fa fa-times" style="color: #111;"></span>
       </div>
       <div class="title-mo">

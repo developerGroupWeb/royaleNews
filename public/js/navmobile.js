@@ -3,22 +3,22 @@ $(function(){
 
     $('.fa-bars').click(function () {
         $('.sidenavLeft').width(260);
-        $('.fa-bars').hide();
+        $('.humbeger').hide();
         $('.fa-times').show();
     });
     	$('.fa-times').click(function () {
         $('.sidenavLeft').width(0);
         $('.fa-times').hide();
-        $('.fa-bars').show();
+        $('.humbeger').show();
     });
 
     $(window).click(function(e) {
 
         // Si ce n'est pas div ni un de ses enfants
-        if(!$(e.target).is('.fa-bars') && !$.contains($('.sidenavLeft')[0],e.target) ) {
+        if(!$(e.target).is('.humbeger') && !$.contains($('.sidenavLeft')[0],e.target) ) {
             $('.sidenavLeft').width(0);
             $('.fa-times').hide();
-        	$('.fa-bars').show();
+        	$('.humbeger').show();
         }
     });
 

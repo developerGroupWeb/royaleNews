@@ -324,3 +324,25 @@ nav .sidenavLeft .abo-li a{
 		font-size: 11px;
 	}
 }
+
+/**---------------------------------------lectureBox Page-----------------------**/
+
+.lectureBox-content{
+	height: 100vh;
+	background: #589;
+	overflow: hidden;
+}
+
+#lectureBox-fistpage{
+	margin-top: 70px;
+	width: 10000px;
+	display: inline-flex;
+}
+
+.lectureBox-nav{
+	overflow: hidden;
+}
+
+.lectureBox-nav .nav{
+	width: 10000px;
+}
