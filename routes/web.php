@@ -65,6 +65,8 @@ Route::group([], function (){
 
 Route::get('{more}', 'TvController@index')->name('tv');
 
+Route::get('{read}', 'ReadController@index')->name('lectureBox');
+
 
 
 

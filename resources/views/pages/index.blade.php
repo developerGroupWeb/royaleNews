@@ -12,7 +12,7 @@
                     <aside id="edition_day" class="edition_card mx-auto bg-white">
                         <h3 class="col-12 p-2 title-label">L'edition du jour</h3>
                         <div class="mt-5 mx-auto">
-                            <a href="#" title="Lire"><img class="img-fluid" src="{{asset('images/laune.jpg')}}"></a>
+                            <a href="{{route('lectureBox', ['read' => 'lectureBox'])}}" title="Lire"><img class="img-fluid" src="{{asset('images/laune.jpg')}}"></a>
                         </div>
                         <hr>
                         <div class="d-none d-lg-block">
@@ -149,7 +149,7 @@
  
                 <div class="d-block d-md-none row">
                     <div class="card">
-                        <a href="#">
+                        <a href="">
                             <div class="p-2 bg-rnews"><strong>A LA UNE</strong></div>
                             <img class="card-img-top" src="{{asset('images/gvbuyb.jpg')}}" alt="Card image cap">
 
@@ -979,7 +979,7 @@
                     <aside id="edition_day" class="edition_card mx-auto d-block bg-white">
                         <h3 class="col-12 p-2 title-label">L'edition du jour</h3>
                          <div class="mt-5">
-                             <a href="#" title="Lire"><img class="img-fluid" src="{{asset('images/laune.jpg')}}"></a>
+                             <a href="{{route('lectureBox', ['read' => 'lectureBox'])}}" title="Lire"><img class="img-fluid" src="{{asset('images/laune.jpg')}}"></a>
                          </div>
  
                          <hr>
