@@ -114,13 +114,13 @@
 
 
 /*Css sidebar on mobile*/
-nav .sidenavLeft .closebtn {
+/*nav .sidenavLeft .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
+}*/
 
 nav .sidenavLeft {
 	margin-top: 40px;
@@ -133,7 +133,7 @@ nav .sidenavLeft {
     background-color: black;
     overflow: auto;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 nav .sidenavLeft .close a{
@@ -345,4 +345,28 @@ nav .sidenavLeft .abo-li a{
 
 .lectureBox-nav .nav{
 	width: 10000px;
+}
+
+.btn-chevron .btn{
+	position: fixed;
+	width: 60px;
+	height: 100%;
+	background: transparent;
+}
+
+.btn-chevron i{
+	font-size: 30px;
+	margin-top: 260px;
+	color: #000;
+}
+
+#sideNav-lectureBox{
+	height: 100%;
+	position: absolute;
+	background: #000;
+	color: #eee;
+	overflow: auto;
+	transition: 0.6s;
+	width: 0;
+	z-index: 10;
 }

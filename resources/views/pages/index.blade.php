@@ -20,7 +20,7 @@
                         </div>
                     </aside>
                 </div>
-                <div class="row d-md-block">
+                <div class="row d-none d-md-block">
                     <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
                          <ol class="carousel-indicators">
                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>

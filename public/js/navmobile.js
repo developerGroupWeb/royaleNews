@@ -1,15 +1,16 @@
 $(function(){
-	$('.fa-times').hide();
+	$('.fa-times, #fa-times-lectureBox').hide();
 
-    $('.fa-bars').click(function () {
-        $('.sidenavLeft').width(260);
-        $('.humbeger').hide();
-        $('.fa-times').show();
+    $('.humbeger, #bars-lectureBox').click(function () {
+        $('.sidenavLeft, #sideNav-lectureBox').width(260);
+        $('.humbeger, #bars-lectureBox').hide();
+        $('.fa-times, #fa-times-lectureBox').show();
     });
-    	$('.fa-times').click(function () {
-        $('.sidenavLeft').width(0);
-        $('.fa-times').hide();
-        $('.humbeger').show();
+
+    $('.fa-times, #fa-times-lectureBox').click(function () {
+        $('.sidenavLeft ,#sideNav-lectureBox').width(0);
+        $('.fa-times, #fa-times-lectureBox').hide();
+        $('.humbeger, #bars-lectureBox').show();
     });
 
     $(window).click(function(e) {
@@ -160,6 +161,33 @@ $(function(){
         }
 
     });
+
+    /**--------------------------------**/
+
+    $(".settingBox").hide();
+    $(".setting").click(function () {
+        $(".settingBox").slideToggle(500);
+    });
+
+    /**-----------------------------------**/
+
+    $(".btn-chevron i").hide();
+
+    $(".btn-chevron .btn").hover(function () {
+        $(this).css(
+            "background-color", "rgba(0,0,0,0.4)"
+        ).find("i").show();
+        
+    }, function() {
+        $(this).css(
+            "background-color", "rgba(0,0,0,0)"
+        ).find("i").hide();
+    });
     
+    $( "#btnLeft" ).click(function() {
+      $( "#lectureBox-fistpage" ).animate({
+        
+      });
+    });
 
 });
